@@ -1,0 +1,11 @@
+-   [x] Convert CSS links to {{ asset('frontend/css/...') }}
+-   [x] Convert JS links to {{ asset('frontend/js/...') }}
+-   [x] Convert image sources to {{ asset('frontend/images/...') }}
+-   [x] Convert page links to {{ url('/...') }}
+-   [x] Create layout app.blade.php with correct asset paths
+-   [x] Refactor index.blade.php to extend layout
+-   [x] Refactor about.blade.php to extend layout
+-   [x] Refactor blog.blade.php to extend layout
+-   [x] Refactor contact.blade.php to extend layout
+-   [x] Add named routes in web.php
+-   [x] Remove duplicate footers and loaders from all pages
