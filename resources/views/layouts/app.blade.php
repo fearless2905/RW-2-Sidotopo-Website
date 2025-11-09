@@ -45,8 +45,15 @@
             <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
               <a href="{{ route('home') }}" class="nav-link">Beranda</a>
             </li>
-            <li class="nav-item {{ request()->routeIs('about') ? 'active' : '' }}">
-              <a href="{{ route('about') }}" class="nav-link">Tentang Kami</a>
+            <li class="nav-item dropdown {{ request()->routeIs('about') ? 'active' : '' }}">
+              <a href="{{ route('about') }}" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tentang Kami
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('about') }}#profil">Profil</a>
+                <a class="dropdown-item" href="{{ route('struktur-rw') }}">Struktur RW 2</a>
+                <a class="dropdown-item" href="{{ route('pengurus-rt') }}">Pengurus RT</a>
+              </div>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Tour</a>
@@ -83,26 +90,21 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
+              <h2 class="ftco-heading-2">Tentang Kami</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Service</a></li>
-                <li><a href="#" class="py-2 d-block">Terms and Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Become a partner</a></li>
-                <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
+                <li><a href="#" class="py-2 d-block">Profil</a></li>
+                <li><a href="#" class="py-2 d-block">Struktur RW</a></li>
+                <li><a href="#" class="py-2 d-block">Struktur RT</a></li>
+                <li><a href="#" class="py-2 d-block">KKN Dharmakarya</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Customer Support</h2>
+              <h2 class="ftco-heading-2">Dokumentasi</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">FAQ</a></li>
-                <li><a href="#" class="py-2 d-block">Payment Option</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
-                <li><a href="#" class="py-2 d-block">How it works</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="#" class="py-2 d-block">Galeri</a></li>
+                <li><a href="#" class="py-2 d-block">Berita</a></li>
               </ul>
             </div>
           </div>
@@ -112,10 +114,12 @@
               <div class="block-23 mb-3">
                 <ul>
                   <li>
-                    <span class="icon icon-map-marker"></span
-                    ><span class="text"
-                      >JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span
-                    >
+                    <a href="https://maps.app.goo.gl/EX9NN1gY4Lc7AT9G9" target="_blank">
+                      <span class="icon icon-map-marker"></span
+                      ><span class="text"
+                        >JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span
+                      >
+                    </a>
                   </li>
                   <li>
                     <a href="#"
