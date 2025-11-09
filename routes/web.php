@@ -11,6 +11,14 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/struktur-rw', function () {
+    return view('struktur-rw');
+})->name('struktur-rw');
+
+Route::get('/pengurus-rt', function () {
+    return view('pengurus-rt');
+})->name('pengurus-rt');
+
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
