@@ -291,8 +291,8 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-            <span class="subheading">Special Offers</span>
-            <h2 class="mb-4"><strong>Top</strong> Tour Packages</h2>
+            <span class="subheading">Galeri</span>
+            <h2 class="mb-4"><strong>Dokumentasi</strong> Warga</h2>
           </div>
         </div>
       </div>
@@ -526,98 +526,22 @@
       </div>
     </section>
 
-    <section
-      class="ftco-section ftco-counter img"
-      id="section-counter"
-      style="background-image: url({{ asset('frontend/images/bg_1.jpg') }})"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div
-            class="col-md-7 text-center heading-section heading-section-white ftco-animate"
-          >
-            <h2 class="mb-4">Some fun facts</h2>
-            <span class="subheading">More than 100,000 websites hosted</span>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="row">
-              <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18 text-center">
-                  <div class="text">
-                    <strong class="number" data-number="100000">0</strong>
-                    <span>Happy Customers</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18 text-center">
-                  <div class="text">
-                    <strong class="number" data-number="40000">0</strong>
-                    <span>Destination Places</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18 text-center">
-                  <div class="text">
-                    <strong class="number" data-number="87000">0</strong>
-                    <span>Hotels</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
-              >
-                <div class="block-18 text-center">
-                  <div class="text">
-                    <strong class="number" data-number="56400">0</strong>
-                    <span>Local Food</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <section class="ftco-section testimony-section bg-light">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-5 heading-section ftco-animate">
-            <span class="subheading">Best EcoTourism Website</span>
-            <h2 class="mb-4 pb-3"><strong>Why</strong> Choose Us?</h2>
+            <span class="subheading">Website RW 2 Sidotopo</span>
+            <h2 class="mb-4 pb-3"><strong>Kenapa</strong> Website RW?</h2>
             <p>
-              We are committed to sustainability and offer eco-friendly travel
-              experiences that connect you with nature and local cultures. By
-              choosing us, you support responsible tourism that benefits the
-              environment and empowers local communities. Our carefully curated
-              destinations and partners ensure that every trip minimizes
-              environmental impact, while providing authentic and meaningful
-              adventures. Travel with us and make a positive difference for the
-              planet, while enjoying unique, eco-conscious journeys.
-            </p>
-
-            <p>
-              <a
-                href="#"
-                class="btn btn-primary btn-outline-primary mt-4 px-4 py-3"
-                >Read more</a
-              >
+                Website RW 2 Sidotopo hadir sebagai wadah informasi digital yang mudah diakses oleh seluruh warga RW 2 Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya. Tujuannya untuk meningkatkan transparansi, komunikasi, dan partisipasi masyarakat dalam berbagai kegiatan lingkungan. Melalui website ini, warga dapat mengakses informasi terbaru seputar profil wilayah, kegiatan warga, pengumuman, dan fasilitas umum. Kami berkomitmen membangun komunitas yang solid, guyub, dan aktif demi kemajuan bersama. Dengan akses digital yang praktis, website ini menjadi jembatan antara pengurus RW dan warga dalam mewujudkan lingkungan yang harmonis, informatif, dan berkembang.
             </p>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 heading-section ftco-animate">
-            <span class="subheading">Testimony</span>
-            <h2 class="mb-4 pb-3"><strong>Our</strong> Guests Says</h2>
+            <span class="subheading">Testimoni</span>
+            <h2 class="mb-4 pb-3"><strong>Kata</strong> Mereka</h2>
             <div class="row ftco-animate">
               <div class="col-md-12">
                 <div class="carousel-testimony owl-carousel">
@@ -625,7 +549,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/person_1.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/pakyanto.jpg') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -635,12 +559,10 @@
                       </div>
                       <div class="text ml-md-4">
                         <p class="mb-5">
-                          Far far away, behind the word mountains, far from the
-                          countries Vokalia and Consonantia, there live the
-                          blind texts.
+                          Semoga dengan adanya website ini bisa mempermudah informasi digital seputar RW 2 Sidotopo secara luas di era teknologi ini.
                         </p>
-                        <p class="name">Dennis Green</p>
-                        <span class="position">Guest from italy</span>
+                        <p class="name">Pak Yanto</p>
+                        <span class="position">Pengurus RW 2</span>
                       </div>
                     </div>
                   </div>
@@ -648,7 +570,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/person_2.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/ketua.jpg') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -658,12 +580,10 @@
                       </div>
                       <div class="text ml-md-4">
                         <p class="mb-5">
-                          Far far away, behind the word mountains, far from the
-                          countries Vokalia and Consonantia, there live the
-                          blind texts.
+                          Website ini semoga bermanfaat untuk kemajuan digitalisasi khususnya lingkungan sekitar RW 2 Sidotopo.
                         </p>
-                        <p class="name">Dennis Green</p>
-                        <span class="position">Guest from London</span>
+                        <p class="name">Rashad</p>
+                        <span class="position">Ketua KKN Dharmakarya</span>
                       </div>
                     </div>
                   </div>
@@ -681,12 +601,10 @@
                       </div>
                       <div class="text ml-md-4">
                         <p class="mb-5">
-                          Far far away, behind the word mountains, far from the
-                          countries Vokalia and Consonantia, there live the
-                          blind texts.
+                          Cihuy.
                         </p>
-                        <p class="name">Dennis Green</p>
-                        <span class="position">Guest from Philippines</span>
+                        <p class="name">Ibu</p>
+                        <span class="position">Anggota KSH RW 2</span>
                       </div>
                     </div>
                   </div>
@@ -702,8 +620,8 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-            <span class="subheading">Special Offers</span>
-            <h2 class="mb-4"><strong>Popular</strong> Local Foods</h2>
+            <span class="subheading">UMKM</span>
+            <h2 class="mb-4"><strong>Kuliner</strong> &amp; UMKM Sekitar</h2>
           </div>
         </div>
         <div class="row">
@@ -860,8 +778,8 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
-            <span class="subheading">Recent Blog</span>
-            <h2><strong>Tips</strong> &amp; Articles</h2>
+            <span class="subheading">Berita</span>
+            <h2><strong>Informasi</strong>  Terupdate</h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -976,38 +894,66 @@
       </div>
     </section>
 
-    <section class="ftco-section-parallax">
+    <section class="ftco-section-parallax ftco-counter">
       <div class="parallax-img d-flex align-items-center">
         <div class="container">
           <div class="row d-flex justify-content-center">
-            <div
-              class="col-md-7 text-center heading-section heading-section-white ftco-animate"
-            >
-              <h2>Subcribe to our Newsletter</h2>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in
-              </p>
-              <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-8">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter email address"
-                      />
-                      <input
-                        type="submit"
-                        value="Subscribe"
-                        class="submit px-3"
-                      />
+            <div class="col-md-6 ftco-animate">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5!2d112.75!3d-7.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9b9b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sJL.%20SIDOTOPO%20LOR%20I%2F21%2C%20Kelurahan%20Sidotopo%2C%20Kecamatan%20Semampir%2C%20Kota%20Surabaya!5e0!3m2!1sen!2sid!4v1690000000000!5m2!1sen!2sid"
+                  width="100%"
+                  height="400"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+            <div class="col-md-6 text-center heading-section heading-section-white ftco-animate">
+                <h4>Informasi Umum</h4>
+                <p>
+                  RW 2 Sidotopo merupakan bagian dari Kelurahan Sidotopo yang dikenal dengan suasana pedesaan yang masih terjaga di tengah perkembangan kota Surabaya. Wilayah ini memiliki karakteristik masyarakat yang guyub dan aktif dalam berbagai kegiatan sosial kemasyarakatan.
+                </p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row">
+                  <div
+                    class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
+                  >
+                    <div class="block-18 text-center">
+                      <div class="text">
+                        <strong class="number" data-number="150" style="color: white;">40</strong>
+                        <span style="color: white;">Kepala Keluarga</span>
+                      </div>
                     </div>
-                  </form>
+                  </div>
+                  <div
+                    class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
+                  >
+                    <div class="block-18 text-center">
+                      <div class="text">
+                        <strong class="number" data-number="450" style="color: white;">450</strong>
+                        <span style="color: white;">Jiwa</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate"
+                  >
+                    <div class="block-18 text-center">
+                      <div class="text">
+                        <strong class="number" data-number="2.5" style="color: white;">10</strong>
+                        <span style="color: white;">Hektar</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+              </div>
           </div>
         </div>
       </div>
