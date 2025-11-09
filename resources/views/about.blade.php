@@ -5,7 +5,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/rajaampat3.jpg') }}')"
+      style="background-image: url({{ asset('frontend/images/rajaampat3.jpg') }})"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -40,7 +40,7 @@
         <div class="row d-md-flex">
           <div
             class="col-md-6 ftco-animate img about-image"
-            style="background-image: url({{ asset('frontend/images/logo.png') }})"
+            style="background-image: url({{ asset('frontend/images/rajaampat3.jpg') }})"
           ></div>
           <div class="col-md-6 ftco-animate p-md-5">
             <div class="row">
@@ -93,6 +93,7 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-whatwedo-tab"
                   >
+                    <div id="profil"></div>
                     <div>
                       <h2 class="mb-4">Huruf D dan K</h2>
                       <p>
@@ -111,6 +112,7 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-mission-tab"
                   >
+                    <div id="struktur-rw"></div>
                     <div>
                       <h2 class="mb-4">Arti Bentuk Pita</h2>
                       <p>
@@ -129,6 +131,7 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-goal-tab"
                   >
+                    <div id="pengurus-rt"></div>
                     <div>
                       <h2 class="mb-4">Penggambaran Simbol Daun</h2>
                       <p>
@@ -349,7 +352,6 @@
         </div>
       </div>
     </section>
-
 
 
 @endsection
