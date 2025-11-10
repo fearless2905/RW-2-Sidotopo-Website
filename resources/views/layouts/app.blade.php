@@ -24,6 +24,49 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
+    <style>
+        /* Your custom CSS here */
+        .dropdown-arrow {
+            transition: transform 0.3s ease-out;
+            margin-left: 5px;
+        }
+
+        .nav-item.dropdown .dropdown-arrow {
+            transform: rotate(0deg); /* Start facing right */
+        }
+
+        .nav-item.dropdown.show .dropdown-arrow,
+        .nav-item.dropdown:hover .dropdown-arrow {
+            transform: rotate(90deg); /* Rotate to down on hover */
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
+            display: block; /* Override default display: none if any framework uses it */
+            position: absolute; /* Usually set by framework, but ensure it's here */
+            background-color: white; /* Example */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Example */
+            padding: 10px; /* Example */
+            min-width: 160px; /* Example */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .nav-item.dropdown.show .dropdown-menu,
+        .nav-item.dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Remove white box on menu hover, keep only for dropdown */
+        .nav-item a:hover {
+            background-color: transparent !important;
+        }
+    </style>
+
   <body>
     {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
