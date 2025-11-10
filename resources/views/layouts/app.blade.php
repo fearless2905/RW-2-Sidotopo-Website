@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/flaticon.css') }}" />
     <link rel="stylesheet" href="{{ asset('frontend/css/icomoon.css') }}" />
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
   <body>
     {{-- Navbar --}}
@@ -50,9 +51,10 @@
                 Tentang Kami
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('about') }}#profil">Profil</a>
+                <a class="dropdown-item" href="{{ route('profil') }}">Profil</a>
                 <a class="dropdown-item" href="{{ route('struktur-rw') }}">Struktur RW 2</a>
                 <a class="dropdown-item" href="{{ route('pengurus-rt') }}">Pengurus RT</a>
+                <a class="dropdown-item" href="{{ route('about') }}">KKN Dharmakarya</a>
               </div>
             </li>
             <li class="nav-item">
