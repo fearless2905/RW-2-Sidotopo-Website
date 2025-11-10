@@ -31,3 +31,11 @@ Route::get('/profil', function () {
     return view('profil');
 })->name('profil');
 
+Route::get('/galeri', function () {
+    return view('galeri');
+})->name('galeri');
+
+Route::get('/blog-single', function () {
+    return view('blog-single');
+})->name('blog-single');
+
