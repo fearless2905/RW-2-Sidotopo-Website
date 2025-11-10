@@ -1,11 +1,5 @@
--   [x] Convert CSS links to {{ asset('frontend/css/...') }}
--   [x] Convert JS links to {{ asset('frontend/js/...') }}
--   [x] Convert image sources to {{ asset('frontend/images/...') }}
--   [x] Convert page links to {{ url('/...') }}
--   [x] Create layout app.blade.php with correct asset paths
--   [x] Refactor index.blade.php to extend layout
--   [x] Refactor about.blade.php to extend layout
--   [x] Refactor blog.blade.php to extend layout
--   [x] Refactor contact.blade.php to extend layout
--   [x] Add named routes in web.php
--   [x] Remove duplicate footers and loaders from all pages
+-   [ ] Add CSS variables for light and dark mode themes in style.css
+-   [ ] Update app.blade.php to include toggle buttons for light/dark mode in the menu and below the footer
+-   [ ] Add JavaScript functionality to toggle between light and dark modes, using localStorage to persist user preference
+-   [ ] Ensure the theme toggle applies to all pages by updating the layout accordingly
+-   [ ] Test the toggle functionality across different pages (welcome, contact, index, about, profil, pengurus-rt, struktur-rw, blog)
