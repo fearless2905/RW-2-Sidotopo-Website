@@ -5,7 +5,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url({{ asset('frontend/images/rajaampat3.jpg') }})"
+      style="background-image: url({{ asset('frontend/images/home1.jpg') }})"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -21,14 +21,14 @@
               class="breadcrumbs"
               data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
             >
-              <span class="mr-2"><a href="{{ route('home') }}">Home</a></span>
-              <span>About</span>
+              <span class="mr-2"><a href="{{ route('home') }}">Beranda</a></span>
+              <span>Tentang Kami</span>
             </p>
             <h1
               class="mb-3 bread"
               data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
             >
-              About Us
+              Dharmakarya
             </h1>
           </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="row d-md-flex">
           <div
             class="col-md-6 ftco-animate img about-image"
-            style="background-image: url({{ asset('frontend/images/rajaampat3.jpg') }})"
+            style="background-image: url({{ asset('frontend/images/logo.png') }})"
           ></div>
           <div class="col-md-6 ftco-animate p-md-5">
             <div class="row">
@@ -153,9 +153,21 @@
     <section class="ftco-section bg-light">
       <div class="container">
         <div class="row justify-content-start mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate">
-            <span class="subheading">FAQS</span>
-            <h2 class="mb-4"><strong>Frequently</strong> Ask Question</h2>
+          <div class="col-md-12 heading-section ftco-animate">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="subheading">FAQS</span>
+                <h2 class="mb-4"><strong>Pertanyaan</strong> Seputar KKN</h2>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/dharmakaryasidotopo/" target="_blank" class="mr-3">
+                  <i class="fab fa-instagram fa-2x text-primary"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-youtube fa-2x text-primary"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -171,7 +183,7 @@
                         href="#menuone"
                         aria-expanded="true"
                         aria-controls="menuone"
-                        >What is Ecotourism?
+                        >Apa itu KKNT SDGs?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -181,12 +193,7 @@
                     <div id="menuone" class="collapse show">
                       <div class="card-body">
                         <p>
-                          Ecotourism is responsible travel to natural areas that
-                          conserves the environment, sustains the well-being of
-                          local people, and involves interpretation and
-                          education. It promotes sustainability by minimizing
-                          negative impacts on the environment and local culture
-                          while maximizing benefits for local communities.
+                          KKNT SDGs adalah program Kuliah Kerja Nyata yang berfokus pada Sustainable Development Goals (SDGs) atau Tujuan Pembangunan Berkelanjutan. Program ini bertujuan untuk memberikan pengalaman praktis kepada mahasiswa dalam mengimplementasikan SDGs di masyarakat.
                         </p>
                       </div>
                     </div>
@@ -200,7 +207,7 @@
                         href="#menutwo"
                         aria-expanded="false"
                         aria-controls="menutwo"
-                        >Why should I choose eco-friendly travel?
+                        >Apa tema KKNT Batch 2 Kelompok 4?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -210,12 +217,7 @@
                     <div id="menutwo" class="collapse">
                       <div class="card-body">
                         <p>
-                          Choosing eco-friendly travel helps reduce your carbon
-                          footprint, conserves natural resources, and supports
-                          local communities. By traveling sustainably, you are
-                          contributing to the preservation of the planet and
-                          ensuring that future generations can experience the
-                          same natural wonders you enjoy.
+                          Tema KKNT Batch 2 Kelompok 4 adalah "Pengembangan Potensi Desa Melalui Inovasi Teknologi dan Edukasi Masyarakat untuk Mewujudkan Desa Mandiri Berkelanjutan".
                         </p>
                       </div>
                     </div>
@@ -230,7 +232,7 @@
                         aria-expanded="false"
                         aria-controls="menu3"
                       >
-                        How do I know if some places is eco-friendly?
+                        Siapa Dosen Pendamping Lapangan (DPL) untuk kelompok ini?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -240,12 +242,7 @@
                     <div id="menu3" class="collapse">
                       <div class="card-body">
                         <p>
-                          Eco-friendly places are certified by reputable
-                          sustainability organizations and follow practices such
-                          as using renewable energy, reducing water and waste
-                          consumption, sourcing local and organic food, and
-                          supporting conservation efforts. Look for green
-                          certifications like Green Key or EarthCheck.
+                          Dosen Pendamping Lapangan (DPL) untuk KKNT SDGs Batch 2 Kelompok 4 adalah Bapak Mohammad Syaraffah, M.I.Kom.
                         </p>
                       </div>
                     </div>
@@ -261,8 +258,7 @@
                         href="#menu4"
                         aria-expanded="false"
                         aria-controls="menu4"
-                        >Are the destinations listed on AmaTrip truly
-                        sustainable?
+                        >Berapa lama durasi KKNT ini?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -272,12 +268,7 @@
                     <div id="menu4" class="collapse">
                       <div class="card-body">
                         <p>
-                          Yes, all destinations on AmaTrip are carefully
-                          selected based on their commitment to sustainable
-                          tourism practices. We work with local partners who
-                          prioritize environmental conservation, cultural
-                          preservation, and community empowerment to ensure that
-                          tourism benefits both travelers and the planet.
+                          Durasi KKNT SDGs Batch 2 Kelompok 4 dimulai dari tanggal 13 Oktober untuk survei, pembukaan pada tanggal 20 Oktober, dan penutupan pada tanggal 13 November.
                         </p>
                       </div>
                     </div>
@@ -291,8 +282,7 @@
                         href="#menu5"
                         aria-expanded="false"
                         aria-controls="menu5"
-                        >How can I minimize my environmental impact while
-                        traveling?
+                        >Apa saja kegiatan yang dilakukan selama KKNT?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -302,13 +292,7 @@
                     <div id="menu5" class="collapse">
                       <div class="card-body">
                         <p>
-                          To minimize your environmental impact, you can choose
-                          eco-friendly accommodations, reduce waste by avoiding
-                          single-use plastics, opt for public transport or
-                          eco-friendly modes of travel like biking, and support
-                          local businesses that promote sustainable practices.
-                          Additionally, always respect local cultures and
-                          wildlife.
+                          Kegiatan KKNT meliputi survei lokasi, sosialisasi program, pelatihan masyarakat, pengembangan potensi desa melalui teknologi, edukasi SDGs, dan evaluasi program untuk memastikan keberlanjutan.
                         </p>
                       </div>
                     </div>
@@ -322,8 +306,7 @@
                         href="#menu6"
                         aria-expanded="false"
                         aria-controls="menu6"
-                        >Can I participate in conservation efforts during my
-                        trip?
+                        >Bagaimana cara mendapatkan informasi lebih lanjut?
                         <span class="collapsed"
                           ><i class="icon-plus-circle"></i></span
                         ><span class="expanded"
@@ -333,14 +316,7 @@
                     <div id="menu6" class="collapse">
                       <div class="card-body">
                         <p>
-                          Yes! Many of our featured destinations offer
-                          opportunities to get involved in conservation efforts,
-                          such as volunteering with local environmental
-                          projects, participating in wildlife monitoring, or
-                          supporting conservation organizations through
-                          donations or eco-friendly activities. Check with our
-                          travel partners for specific programs available at
-                          your destination.
+                          Untuk informasi lebih lanjut tentang KKNT SDGs Batch 2 Kelompok 4, silakan hubungi DPL Bapak Mohammad Syaraffah, M.I.Kom. atau kunjungi situs resmi Universitas Pembangunan Nasional "Veteran" Jawa Timur.
                         </p>
                       </div>
                     </div>
