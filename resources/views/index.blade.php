@@ -139,13 +139,14 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="destination-slider owl-carousel ftco-animate">
+            <div class="destination-slider owl-carousel ftco-animate" id="gallery-carousel">
               <div class="item">
                 <div class="destination">
                   <a
-                    href="{{ url('/waerebo') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/blog1.jpg') }})"
+                    href="#"
+                    class="img d-flex justify-content-center align-items-center open-gallery"
+                    data-img="{{ asset('frontend/images/galeri1.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/galeri1.jpg') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -155,39 +156,19 @@
                   </a>
                   <div class="text p-3">
                     <h3>
-                      <a href="{{ url('/waerebo') }}"
-                        >Pembukaan KKN Kelompok 4, RW 2 Sidotopo</a
-                      >
+                      KKNT SDGs UPNVJT
                     </h3>
-                    <span class="listing">100 Views</span>
+                    <span class="listing">13 Oktober 2025-13 November 2025</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="destination">
                   <a
-                    href="{{ url('/toraja') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/toraja.jpg') }})"
-                  >
-                    <div
-                      class="icon d-flex justify-content-center align-items-center"
-                    >
-                      <span class="icon-search2"></span>
-                    </div>
-                  </a>
-                  <div class="text p-3">
-                    <h3><a href="{{ url('/toraja') }}">Toraja, Sulawesi</a></h3>
-                    <span class="listing">20 Listing</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="destination">
-                  <a
-                    href="{{ url('/penglipuran') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/penglipular.jpg') }})"
+                    href="#"
+                    class="img d-flex justify-content-center align-items-center open-gallery"
+                    data-img="{{ asset('frontend/images/posyandu1.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/posyandu1.jpg') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -197,56 +178,19 @@
                   </a>
                   <div class="text p-3">
                     <h3>
-                      <a href="{{ url('/penglipuran') }}">Desa Penglipuran, Bali</a>
+                      Posyandu
                     </h3>
-                    <span class="listing">10 Listing</span>
+                    <span class="listing">Kegiatan Rutin</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="destination">
                   <a
-                    href="{{ url('/wakatobi') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/wakatobi.jpg') }})"
-                  >
-                    <div
-                      class="icon d-flex justify-content-center align-items-center"
-                    >
-                      <span class="icon-search2"></span>
-                    </div>
-                  </a>
-                  <div class="text p-3">
-                    <h3><a href="{{ url('/wakatobi') }}">Wakatobi, Sulawesi</a></h3>
-                    <span class="listing">3 Listing</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="destination">
-                  <a
-                    href="{{ url('/rajaampat') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/rajaampat.jpg') }})"
-                  >
-                    <div
-                      class="icon d-flex justify-content-center align-items-center"
-                    >
-                      <span class="icon-search2"></span>
-                    </div>
-                  </a>
-                  <div class="text p-3">
-                    <h3><a href="{{ url('/rajaampat') }}">Raja Ampat, Papua</a></h3>
-                    <span class="listing">3 Listing</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="destination">
-                  <a
-                    href="{{ url('/hilisimaetano') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/batunias.jpg') }})"
+                    href="#"
+                    class="img d-flex justify-content-center align-items-center open-gallery"
+                    data-img="{{ asset('frontend/images/senam1.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/senam1.jpg') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -256,18 +200,19 @@
                   </a>
                   <div class="text p-3">
                     <h3>
-                      <a href="{{ url('/hilisimaetano') }}">Hilisimaetano, Sumatera</a>
+                      Senam Bersama
                     </h3>
-                    <span class="listing">3 Listing</span>
+                    <span class="listing">Setiap Minggu</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="destination">
                   <a
-                    href="{{ url('/tangkahan') }}"
-                    class="img d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('frontend/images/tangkahan.jpg') }})"
+                    href="#"
+                    class="img d-flex justify-content-center align-items-center open-gallery"
+                    data-img="{{ asset('frontend/images/banksampah1.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/banksampah1.jpg') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -276,8 +221,10 @@
                     </div>
                   </a>
                   <div class="text p-3">
-                    <h3><a href="{{ url('/tangkahan') }}">Tangkahan, Sumatera</a></h3>
-                    <span class="listing">3 Listing</span>
+                    <h3>
+                      Bank Sampah
+                    </h3>
+                    <span class="listing">Program Lingkungan</span>
                   </div>
                 </div>
               </div>
@@ -287,244 +234,7 @@
       </div>
     </section>
 
-    <section class="ftco-section bg-light" id="top-tour-packages">
-      <div class="container">
-        <div class="row justify-content-start mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate">
-            <span class="subheading">Galeri</span>
-            <h2 class="mb-4"><strong>Dokumentasi</strong> Warga</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/waerebo') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/waerebo3.jpeg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="{{ url('/waerebo') }}">Waerebo, Nusa Tenggara</a></h3>
-                    <p class="rate">
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star-o"></i>
-                      <span>1000 Rating</span>
-                    </p>
-                  </div>
-                  <div class="two">
-                    <span class="price">$30</span>
-                  </div>
-                </div>
-                <p>
-                  Desa Waerebo, yang terletak di pegunungan Flores, adalah salah
-                  satu tempat paling magis di Indonesia. Dengan arsitektur
-                  tradisionalnya yang unik dan budaya yang kaya
-                </p>
-                <p class="days"><span>2 hari 1 malam</span></p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Nusa Tenggara Timur</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/hilisimaetano') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/batunias.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="{{ url('/hilisimaetano') }}">Hilisimaetano, Nias</a></h3>
-                    <p class="rate">
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star-o"></i>
-                      <span>900 Rating</span>
-                    </p>
-                  </div>
-                  <div class="two">
-                    <span class="price">$20</span>
-                  </div>
-                </div>
-                <p>
-                  Hilisimaetano di Pulau Nias menawarkan tradisi lompat batu
-                  yang unik dan rumah adat megah. Pesona budaya dan alamnya
-                  sangat autentik
-                </p>
-                <p class="days"><span>2 hari 1 malam</span></p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Nias, Sumatera Utara</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/penglipuran') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/penglipuran.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="{{ url('/penglipuran') }}">Desa Penglipuran, Bali</a></h3>
-                    <p class="rate">
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star-o"></i>
-                      <span>700 Rating</span>
-                    </p>
-                  </div>
-                  <div class="two">
-                    <span class="price">$35</span>
-                  </div>
-                </div>
-                <p>
-                  Desa Penglipuran di Bali terkenal dengan tata ruang rapi,
-                  rumah tradisional, dan keindahan bambu. Budaya leluhur terjaga
-                  dengan baik
-                </p>
-                <p class="days"><span>2 hari 1 malam</span></p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Bangli, Bali</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/tangkahan') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/tangkahan.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="{{ url('/tangkahan') }}">Tangkahan, Sumatera </a></h3>
-                    <p class="rate">
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star-o"></i>
-                      <span>650 Rating</span>
-                    </p>
-                  </div>
-                  <div class="two">
-                    <span class="price">$20</span>
-                  </div>
-                </div>
-                <p>
-                  Tangkahan di Sumatra Utara adalah surga ekowisata dengan hutan
-                  tropis, gajah liar, dan sungai jernih. Cocok untuk pencinta
-                  alam sejati.
-                </p>
-                <p class="days"><span>2 hari 1 malam</span></p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span
-                    ><i class="icon-map-o"></i> Langkat, Sumatera Utara</span
-                  >
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/rajaampat') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/rajaampat3.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <div class="d-flex">
-                  <div class="one">
-                    <h3><a href="{{ url('/rajaampat') }}">Raja Ampat, Papua</a></h3>
-                    <p class="rate">
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star"></i>
-                      <i class="icon-star-o"></i>
-                      <span>1500 Rating</span>
-                    </p>
-                  </div>
-                  <div class="two">
-                    <span class="price">$60</span>
-                  </div>
-                </div>
-                <p>
-                  Raja Ampat di Papua Barat adalah surga bawah laut dengan
-                  terumbu karang, pulau-pulau eksotis, dan keanekaragaman hayati
-                  laut yang menakjubkan.
-                </p>
-                <p class="days"><span>2 hari 1 malam</span></p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span
-                    ><i class="icon-map-o"></i> Raja Ampat, Papua Barat</span
-                  >
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
 
 
@@ -783,10 +493,35 @@
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-3 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{ url('/waerebo') }}"
+                href="{{ route('blog-single') }}"
+                class="block-20"
+                style="background-image: url('{{ asset('frontend/images/blog1.jpg') }}')"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <span class="tag">KKN, SDGs</span>
+                <h3 class="heading mt-3">
+                  <a href="{{ route('blog-single') }}">Pembukaan KKN SDGs Kelompok 4</a>
+                </h3>
+                <div class="meta mb-3">
+                  <div><a href="#">20 Oktober 2025</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="{{ route('blog') }}"
                 class="block-20"
                 style="background-image: url('{{ asset('frontend/images/wae-rebo-village.jpg') }}')"
               >
@@ -794,7 +529,7 @@
               <div class="text p-4 d-block">
                 <span class="tag">Tips, Travel</span>
                 <h3 class="heading mt-3">
-                  <a href="{{ url('/waerebo') }}">The Wonderful of Waerebo Village</a>
+                  <a href="{{ route('blog') }}">The Wonderful of Waerebo Village</a>
                 </h3>
                 <div class="meta mb-3">
                   <div><a href="#">August 12, 2018</a></div>
@@ -808,75 +543,18 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{ url('/penglipuran') }}"
+                href="{{ route('blog') }}"
                 class="block-20"
                 style="background-image: url('{{ asset('frontend/images/penglipular.jpg') }}')"
               >
               </a>
-              <div class="text p-4">
+              <div class="text p-4 d-block">
                 <span class="tag">Culture</span>
                 <h3 class="heading mt-3">
-                  <a href="{{ url('/penglipuran') }}"
-                    >Penglipuran The World's Cleanest Village</a
-                  >
-                </h3>
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="{{ url('/hilisimaetano') }}"
-                class="block-20"
-                style="background-image: url('{{ asset('frontend/images/Hilisimaetano3.jpg') }}')"
-              >
-              </a>
-              <div class="text p-4">
-                <span class="tag">Tips, Travel</span>
-                <h3 class="heading mt-3">
-                  <a href="{{ url('/hilisimaetano') }}"
-                    >Hilisimaetano Authentic Charm of Nias Culture</a
-                  >
-                </h3>
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="{{ url('/rajaampat') }}"
-                class="block-20"
-                style="background-image: url('{{ asset('frontend/images/rajaampat3.jpg') }}')"
-              >
-              </a>
-              <div class="text p-4">
-                <span class="tag">Tips, Travel</span>
-                <h3 class="heading mt-3">
-                  <a href="{{ url('/rajaampat') }}"
-                    >Visit Raja Ampat and Spice Islands with Coral
-                    Expeditions</a
-                  >
+                  <a href="{{ route('blog') }}">Penglipuran The World's Cleanest Village</a>
                 </h3>
                 <div class="meta mb-3">
                   <div><a href="#">August 12, 2018</a></div>
@@ -961,4 +639,101 @@
 
 
 
+
+
+
+
+
+{{-- ===== Modal Popup ===== --}}
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content border-0 shadow bg-transparent">
+      <div class="modal-body text-center p-0 position-relative">
+        <img id="modalImage" src="" class="img-fluid rounded zoomable" style="max-height: 80vh; object-fit: contain; cursor: grab;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{{-- ===== CSS Zoom ===== --}}
+<style>
+  .zoomable {
+    transition: transform 0.2s ease;
+  }
+</style>
+
+{{-- ===== Script ===== --}}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = $('#galleryModal');
+    const modalImg = document.getElementById('modalImage');
+
+    let scale = 1;
+    let isDragging = false;
+    let startX, startY;
+    let originX = 0, originY = 0;
+
+    // Saat gambar diklik → buka modal
+    $('.open-gallery').on('click', function (e) {
+      e.preventDefault();
+      const imgSrc = $(this).data('img');
+      modalImg.src = imgSrc;
+      scale = 1;
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+      modal.modal('show');
+    });
+
+    // Double-click untuk zoom
+    modalImg.addEventListener('dblclick', function () {
+      if (scale === 1) {
+        scale = 2; // Zoom in
+      } else {
+        scale = 1; // Zoom out
+      }
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Zoom dengan scroll
+    modalImg.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      if (e.deltaY < 0) scale += 0.1;
+      else if (scale > 1) scale -= 0.1;
+
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Drag saat di-zoom
+    modalImg.addEventListener('mousedown', function (e) {
+      if (scale <= 1) return;
+      isDragging = true;
+      startX = e.clientX - originX;
+      startY = e.clientY - originY;
+      modalImg.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mouseup', function () {
+      isDragging = false;
+      modalImg.style.cursor = 'grab';
+    });
+
+    window.addEventListener('mousemove', function (e) {
+      if (!isDragging) return;
+      originX = e.clientX - startX;
+      originY = e.clientY - startY;
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Reset zoom saat modal ditutup
+    modal.on('hidden.bs.modal', function () {
+      scale = 1;
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+    });
+  });
+</script>
 @endsection
