@@ -57,8 +57,8 @@
                 <a class="dropdown-item" href="{{ route('about') }}">KKN Dharmakarya</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Tour</a>
+            <li class="nav-item {{ request()->routeIs('galeri') ? 'active' : '' }}">
+              <a href="{{ route('galeri') }}" class="nav-link">Galeri</a>
             </li>
             <li class="nav-item {{ request()->routeIs('blog') ? 'active' : '' }}">
               <a href="{{ route('blog') }}" class="nav-link">Berita</a>
@@ -94,10 +94,10 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Tentang Kami</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Profil</a></li>
-                <li><a href="#" class="py-2 d-block">Struktur RW</a></li>
-                <li><a href="#" class="py-2 d-block">Struktur RT</a></li>
-                <li><a href="#" class="py-2 d-block">KKN Dharmakarya</a></li>
+                <li><a href="{{ route('profil') }}" class="py-2 d-block">Profil</a></li>
+                <li><a href="{{ route('struktur-rw') }}" class="py-2 d-block">Struktur RW</a></li>
+                <li><a href="{{ route('pengurus-rt') }}" class="py-2 d-block">Struktur RT</a></li>
+                <li><a href="{{ route('about') }}" class="py-2 d-block">KKN Dharmakarya</a></li>
               </ul>
             </div>
           </div>
@@ -105,8 +105,8 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Dokumentasi</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Galeri</a></li>
-                <li><a href="#" class="py-2 d-block">Berita</a></li>
+                <li><a href="{{ route('galeri') }}" class="py-2 d-block">Galeri</a></li>
+                <li><a href="{{ route('blog') }}" class="py-2 d-block">Berita</a></li>
               </ul>
             </div>
           </div>
