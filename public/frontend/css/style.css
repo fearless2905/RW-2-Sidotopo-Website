@@ -9487,7 +9487,7 @@ a.text-dark:focus {
 
 body {
     font-family: "Poppins", Arial, sans-serif;
-    background: #2b2b39;
+    background: #101010;
     font-size: 14px;
     line-height: 1.8;
     font-weight: 300;
@@ -9933,7 +9933,7 @@ h5,
 }
 
 .bg-light {
-    background: #2b2b39 !important;
+    background: #1d1d23 !important;
 }
 
 .bg-primary {
