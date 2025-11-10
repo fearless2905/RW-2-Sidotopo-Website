@@ -27,3 +27,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/profil', function () {
+    return view('profil');
+})->name('profil');
+
