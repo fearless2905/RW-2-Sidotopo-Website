@@ -37,13 +37,13 @@
                 <div class="row d-flex">
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="#" class="block-20" style="background-image: url('{{ asset('frontend/images/waerebo.jpg') }}');">
+                            <a href="{{ route('blog-single') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/kontenblog1.jpg') }}');">
                             </a>
                             <div class="text p-4 d-block">
-                                <span class="tag">Tips, Travel</span>
-                                <h3 class="heading mt-3"><a href="#">The Wonderful of Waerebo Village</a></h3>
+                                <span class="tag">KKN, SDGs</span>
+                                <h3 class="heading mt-3"><a href="{{ route('blog-single') }}">Pembukaan KKN SDGs Kelompok 4 pada 20 Oktober 2025</a></h3>
                                 <div class="meta mb-3">
-                                    <div><a href="#">August 12, 2018</a></div>
+                                    <div><a href="#">20 Oktober 2025</a></div>
                                     <div><a href="#">Admin</a></div>
                                     <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                                 </div>
