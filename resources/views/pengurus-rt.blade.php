@@ -27,7 +27,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.jpg') }}" alt="Ketua RT 1">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.webp') }}" alt="Ketua RT 1">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -47,7 +47,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_2.jpg') }}" alt="Sekretaris RT 1">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_2.webp') }}" alt="Sekretaris RT 1">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -67,7 +67,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_3.jpg') }}" alt="Bendahara RT 1">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_3.webp') }}" alt="Bendahara RT 1">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -102,7 +102,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_4.jpg') }}" alt="Ketua RT 2">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_4.webp') }}" alt="Ketua RT 2">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -122,7 +122,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.jpg') }}" alt="Sekretaris RT 2">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.webp') }}" alt="Sekretaris RT 2">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -142,7 +142,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_2.jpg') }}" alt="Bendahara RT 2">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_2.webp') }}" alt="Bendahara RT 2">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -177,7 +177,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_3.jpg') }}" alt="Ketua RT 3">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_3.webp') }}" alt="Ketua RT 3">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -197,7 +197,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_4.jpg') }}" alt="Sekretaris RT 3">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_4.webp') }}" alt="Sekretaris RT 3">
                         </figure>
                       </div>
                       <div class="brxe-div">
@@ -217,7 +217,7 @@
                     <div class="brxe-div flex--row justify-content--between align-items--center gap--s">
                       <div class="brxe-div avatar__wrapper">
                         <figure class="brxe-image avatar__image">
-                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.jpg') }}" alt="Bendahara RT 3">
+                          <img class="css-filter size-thumbnail" src="{{ asset('frontend/images/person_1.webp') }}" alt="Bendahara RT 3">
                         </figure>
                       </div>
                       <div class="brxe-div">

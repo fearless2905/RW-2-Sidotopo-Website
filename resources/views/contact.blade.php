@@ -7,7 +7,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/bromo.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/bromo.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">

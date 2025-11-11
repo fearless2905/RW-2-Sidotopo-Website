@@ -5,7 +5,7 @@
 @section('content')
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/mural.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/mural1.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -51,7 +51,7 @@
             </p>
             <p>
               <img
-                src="{{ asset('frontend/images/mural1.jpg') }}"
+                src="{{ asset('frontend/images/mural.webp') }}"
                 alt="Mural Daun Pohon RW 2"
                 class="img-fluid mx-auto d-block"
               />

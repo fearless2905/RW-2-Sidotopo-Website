@@ -7,7 +7,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url({{ asset('frontend/images/profil.jpg') }})"
+      style="background-image: url({{ asset('frontend/images/profil.webp') }})"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -78,7 +78,7 @@
         <div class="row d-md-flex">
           <div class="col-md-6 ftco-animate">
             <div class="map-container">
-              <img src="{{ asset('frontend/images/profil.jpg') }}" alt="RW 2 Sidotopo" class="img-fluid rounded">
+              <img src="{{ asset('frontend/images/profil.webp') }}" alt="RW 2 Sidotopo" class="img-fluid rounded">
             </div>
           </div>
           <div class="col-md-6 ftco-animate">

@@ -3,7 +3,7 @@
 @section('title', 'Galeri - RW 2 Sidotopo')
 
 @section('content')
-<div class="hero-wrap js-fullheight" style="background-image: url('{{ asset('frontend/images/galeri.jpg') }}')">
+<div class="hero-wrap js-fullheight" style="background-image: url('{{ asset('frontend/images/galeri.webp') }}')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -26,24 +26,24 @@
       <h3 class="mb-4">KKNT SDGs UPNVJT<span class="text-muted small"> 13 Oktober 2025-13 November 2025</span></h3>
       <div class="owl-carousel owl-theme mb-5" id="carousel-kegiatan-sosial">
         @foreach ([
-          'frontend/images/survei.jpg',
-          'frontend/images/kontenblog1.jpg',
-          'frontend/images/dharmakarya.jpg',
-          'frontend/images/blog1.jpg',
-          'frontend/images/galeri1.jpg',
-          'frontend/images/galeri2.jpg',
-          'frontend/images/galeri3.jpg',
-          'frontend/images/galeri4.jpg',
-          'frontend/images/galeri5.jpg',
-          'frontend/images/galeri6.jpg',
-          'frontend/images/galeri7.jpg',
-          'frontend/images/galeri8.jpg',
-          'frontend/images/galeri9.jpg',
-          'frontend/images/galeri10.jpg',
-          'frontend/images/galeri11.jpg',
-          'frontend/images/galeri12.jpg',
-          'frontend/images/galeri13.jpg',
-          'frontend/images/galeri14.jpg',
+          'frontend/images/survei.webp',
+          'frontend/images/kontenblog1.webp',
+          'frontend/images/dharmakarya.webp',
+          'frontend/images/blog1.webp',
+          'frontend/images/galeri1.webp',
+          'frontend/images/galeri2.webp',
+          'frontend/images/galeri3.webp',
+          'frontend/images/galeri4.webp',
+          'frontend/images/galeri5.webp',
+          'frontend/images/galeri6.webp',
+          'frontend/images/galeri7.webp',
+          'frontend/images/galeri8.webp',
+          'frontend/images/galeri9.webp',
+          'frontend/images/galeri10.webp',
+          'frontend/images/galeri11.webp',
+          'frontend/images/galeri12.webp',
+          'frontend/images/galeri13.webp',
+          'frontend/images/galeri14.webp',
         ] as $img)
           <div class="item">
             <div class="card shadow-sm border-0">
@@ -59,14 +59,14 @@
       <h3 class="mb-4">Posyandu <span class="text-muted small"></span></h3>
       <div class="owl-carousel owl-theme mb-5" id="carousel-kkn-dharmakarya">
         @foreach ([
-          'frontend/images/posyandu1.jpg',
-          'frontend/images/posyandu2.jpg',
-          'frontend/images/posyandu3.jpg',
-          'frontend/images/posyandu4.jpg',
-          'frontend/images/posyandu5.jpg',
-          'frontend/images/posyandu6.jpg',
-          'frontend/images/posyandu7.jpg',
-          'frontend/images/posyandu8.jpg',
+          'frontend/images/posyandu1.webp',
+          'frontend/images/posyandu2.webp',
+          'frontend/images/posyandu3.webp',
+          'frontend/images/posyandu4.webp',
+          'frontend/images/posyandu5.webp',
+          'frontend/images/posyandu6.webp',
+          'frontend/images/posyandu7.webp',
+          'frontend/images/posyandu8.webp',
         ] as $img)
           <div class="item">
             <div class="card shadow-sm border-0">
@@ -82,9 +82,9 @@
       <h3 class="mb-4">Senam Bersama <span class="text-muted small"> Setiap Minggu</span></h3>
       <div class="owl-carousel owl-theme mb-5" id="carousel-dokumentasi-kegiatan">
         @foreach ([
-          'frontend/images/senam1.jpg',
-          'frontend/images/senam2.jpg',
-          'frontend/images/senam3.jpg',
+          'frontend/images/senam1.webp',
+          'frontend/images/senam2.webp',
+          'frontend/images/senam3.webp',
         ] as $img)
           <div class="item">
             <div class="card shadow-sm border-0">
@@ -100,10 +100,10 @@
       <h3 class="mb-4">Bank Sampah <span class="text-muted small"> </span></h3>
       <div class="owl-carousel owl-theme mb-5" id="carousel-bank-sampah">
         @foreach ([
-          'frontend/images/banksampah1.jpg',
-          'frontend/images/banksampah2.jpg',
-          'frontend/images/banksampah3.jpg',
-          'frontend/images/banksampah4.jpg',
+          'frontend/images/banksampah1.webp',
+          'frontend/images/banksampah2.webp',
+          'frontend/images/banksampah3.webp',
+          'frontend/images/banksampah4.webp',
         ] as $img)
           <div class="item">
             <div class="card shadow-sm border-0">

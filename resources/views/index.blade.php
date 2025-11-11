@@ -7,7 +7,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/home1.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/home1.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -143,8 +143,8 @@
                   <a
                     href="#"
                     class="img d-flex justify-content-center align-items-center open-gallery"
-                    data-img="{{ asset('frontend/images/galeri1.jpg') }}"
-                    style="background-image: url({{ asset('frontend/images/galeri1.jpg') }})"
+                    data-img="{{ asset('frontend/images/galeri1.webp') }}"
+                    style="background-image: url({{ asset('frontend/images/galeri1.webp') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -165,8 +165,8 @@
                   <a
                     href="#"
                     class="img d-flex justify-content-center align-items-center open-gallery"
-                    data-img="{{ asset('frontend/images/posyandu1.jpg') }}"
-                    style="background-image: url({{ asset('frontend/images/posyandu1.jpg') }})"
+                    data-img="{{ asset('frontend/images/posyandu1.webp') }}"
+                    style="background-image: url({{ asset('frontend/images/posyandu1.webp') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -187,8 +187,8 @@
                   <a
                     href="#"
                     class="img d-flex justify-content-center align-items-center open-gallery"
-                    data-img="{{ asset('frontend/images/senam1.jpg') }}"
-                    style="background-image: url({{ asset('frontend/images/senam1.jpg') }})"
+                    data-img="{{ asset('frontend/images/senam1.webp') }}"
+                    style="background-image: url({{ asset('frontend/images/senam1.webp') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -209,8 +209,8 @@
                   <a
                     href="#"
                     class="img d-flex justify-content-center align-items-center open-gallery"
-                    data-img="{{ asset('frontend/images/banksampah1.jpg') }}"
-                    style="background-image: url({{ asset('frontend/images/banksampah1.jpg') }})"
+                    data-img="{{ asset('frontend/images/banksampah1.webp') }}"
+                    style="background-image: url({{ asset('frontend/images/banksampah1.webp') }})"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -260,7 +260,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/pakyanto.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/pakyanto.webp') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -281,7 +281,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/ketua.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/ketua.webp') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -302,7 +302,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/person_1.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/person_1.webp') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -343,8 +343,8 @@
                   <a
                     href="#"
                     class="img img-2 d-flex justify-content-center align-items-center open-umkm"
-                    style="background-image: url({{ asset('frontend/images/aksesoris.jpg') }})"
-                    data-img="{{ asset('frontend/images/aksesoris.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/aksesoris.webp') }})"
+                    data-img="{{ asset('frontend/images/aksesoris.webp') }}"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -376,8 +376,8 @@
                   <a
                     href="#"
                     class="img img-2 d-flex justify-content-center align-items-center open-umkm"
-                    style="background-image: url({{ asset('frontend/images/nasicampur.jpg') }})"
-                    data-img="{{ asset('frontend/images/nasicampur.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/nasicampur.webp') }})"
+                    data-img="{{ asset('frontend/images/nasicampur.webp') }}"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -438,8 +438,8 @@
                   <a
                     href="#"
                     class="img img-2 d-flex justify-content-center align-items-center open-umkm"
-                    style="background-image: url({{ asset('frontend/images/warkop.jpg') }})"
-                    data-img="{{ asset('frontend/images/warkop.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/warkop.webp') }})"
+                    data-img="{{ asset('frontend/images/warkop.webp') }}"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -469,8 +469,8 @@
                   <a
                     href="#"
                     class="img img-2 d-flex justify-content-center align-items-center open-umkm"
-                    style="background-image: url({{ asset('frontend/images/warungmadura.jpg') }})"
-                    data-img="{{ asset('frontend/images/warungmadura.jpg') }}"
+                    style="background-image: url({{ asset('frontend/images/warungmadura.webp') }})"
+                    data-img="{{ asset('frontend/images/warungmadura.webp') }}"
                   >
                     <div
                       class="icon d-flex justify-content-center align-items-center"
@@ -517,7 +517,7 @@
                   <a
                     href="{{ route('blog-pembukaan-kkn') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/blog1.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/blog1.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -542,7 +542,7 @@
                   <a
                     href="{{ route('blog-posyandu') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/posyandu3.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/posyandu3.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -567,7 +567,7 @@
                   <a
                     href="{{ route('blog-senam') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/senam2.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/senam2.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -592,7 +592,7 @@
                   <a
                     href="{{ route('blog-bank-sampah') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/banksampah1.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/banksampah1.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -617,7 +617,7 @@
                   <a
                     href="{{ route('blog-kebun-asri') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/dharmakarya.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/dharmakarya.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -642,7 +642,7 @@
                   <a
                     href="{{ route('blog-mural') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/mural.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/mural.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">
@@ -667,7 +667,7 @@
                   <a
                     href="{{ route('blog-ecobrick') }}"
                     class="block-20"
-                    style="background-image: url('{{ asset('frontend/images/ecobrick.jpg') }}')"
+                    style="background-image: url('{{ asset('frontend/images/ecobrick.webp') }}')"
                   >
                   </a>
                   <div class="text p-4 d-block">

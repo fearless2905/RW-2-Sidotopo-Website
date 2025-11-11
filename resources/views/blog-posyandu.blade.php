@@ -5,7 +5,7 @@
 @section('content')
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/posyandu3copy.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/posyandu3copy.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -51,7 +51,7 @@
             </p>
             <p>
               <img
-                src="{{ asset('frontend/images/posyandu1.jpg') }}"
+                src="{{ asset('frontend/images/posyandu1.webp') }}"
                 alt="Kegiatan Posyandu RW 2"
                 class="img-fluid mx-auto d-block"
               />

@@ -7,7 +7,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/profil.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/profil.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -39,7 +39,7 @@
                 <div class="row d-flex">
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-pembukaan-kkn') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/kontenblog1.jpg') }}');">
+                            <a href="{{ route('blog-pembukaan-kkn') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/kontenblog1.webp') }}');">
                             </a>
                             <div class="text p-4 d-block">
                                 <span class="tag">KKN, SDGs</span>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-posyandu') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/posyandu3.jpg') }}');">
+                            <a href="{{ route('blog-posyandu') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/posyandu3.webp') }}');">
                             </a>
                             <div class="text p-4">
                                 <span class="tag">Kesehatan</span>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-senam') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/senam2.jpg') }}');">
+                            <a href="{{ route('blog-senam') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/senam2.webp') }}');">
                             </a>
                             <div class="text p-4">
                                 <span class="tag">Kesehatan, Komunitas</span>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-bank-sampah') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/banksampah1.jpg') }}');">
+                            <a href="{{ route('blog-bank-sampah') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/banksampah1.webp') }}');">
                             </a>
                             <div class="text p-4">
                                 <span class="tag">Lingkungan, Daur Ulang</span>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-kebun-asri') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/dharmakarya.jpg') }}');">
+                            <a href="{{ route('blog-kebun-asri') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/dharmakarya.webp') }}');">
                             </a>
                             <div class="text p-4 d-block">
                                 <span class="tag">Lingkungan, Pertanian</span>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-mural') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/mural.jpg') }}');">
+                            <a href="{{ route('blog-mural') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/mural.webp') }}');">
                             </a>
                             <div class="text p-4">
                                 <span class="tag">Seni, Lingkungan</span>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-3 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="{{ route('blog-ecobrick') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/ecobrick.jpg') }}');">
+                            <a href="{{ route('blog-ecobrick') }}" class="block-20" style="background-image: url('{{ asset('frontend/images/ecobrick.webp') }}');">
                             </a>
                             <div class="text p-4">
                                 <span class="tag">Lingkungan, Inovasi</span>

@@ -7,7 +7,7 @@
 
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url({{ asset('frontend/images/home1.jpg') }})"
+      style="background-image: url({{ asset('frontend/images/home1.webp') }})"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -183,8 +183,8 @@
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/proker1.JPG') }}">
-              <img src="{{ asset('frontend/images/proker1.JPG') }}" alt="Sosialisasi Branding UMKM" class="img-fluid rounded">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/proker1.webp') }}">
+              <img src="{{ asset('frontend/images/proker1.webp') }}" alt="Sosialisasi Branding UMKM" class="img-fluid rounded">
             </a>
           </div>
         </div>
@@ -192,8 +192,8 @@
         <!-- Kebun Asri -->
         <div class="row d-md-flex mb-5">
           <div class="col-md-6 ftco-animate">
-            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/dharmakarya.jpg') }}">
-              <img src="{{ asset('frontend/images/dharmakarya.jpg') }}" alt="Kebun Asri" class="img-fluid rounded">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/dharmakarya.webp') }}">
+              <img src="{{ asset('frontend/images/dharmakarya.webp') }}" alt="Kebun Asri" class="img-fluid rounded">
             </a>
           </div>
           <div class="col-md-6 ftco-animate">
@@ -227,8 +227,8 @@
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/mural.jpg') }}">
-              <img src="{{ asset('frontend/images/mural.jpg') }}" alt="Mural Daun Pohon" class="img-fluid rounded">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/mural.webp') }}">
+              <img src="{{ asset('frontend/images/mural.webp') }}" alt="Mural Daun Pohon" class="img-fluid rounded">
             </a>
           </div>
         </div>
@@ -236,8 +236,8 @@
         <!-- Ecobrick RW 2 -->
         <div class="row d-md-flex mb-5">
           <div class="col-md-6 ftco-animate">
-            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/ecobrick.JPG') }}">
-              <img src="{{ asset('frontend/images/ecobrick.JPG') }}" alt="Ecobrick RW 2" class="img-fluid rounded">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/ecobrick.webp') }}">
+              <img src="{{ asset('frontend/images/ecobrick.webp') }}" alt="Ecobrick RW 2" class="img-fluid rounded">
             </a>
           </div>
           <div class="col-md-6 ftco-animate">

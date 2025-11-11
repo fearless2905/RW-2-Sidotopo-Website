@@ -5,7 +5,7 @@
 @section('content')
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/blog1copy.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/blog1copy.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -52,7 +52,7 @@
             </p>
             <p>
               <img
-                src="{{ asset('frontend/images/kontenblog1.jpg') }}"
+                src="{{ asset('frontend/images/kontenblog1.webp') }}"
                 alt="Pembukaan KKN SDGs Kelompok 4"
                 class="img-fluid mx-auto d-block"
               />

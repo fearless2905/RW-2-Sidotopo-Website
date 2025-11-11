@@ -5,7 +5,7 @@
 @section('content')
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('{{ asset('frontend/images/ecobrick.jpg') }}')"
+      style="background-image: url('{{ asset('frontend/images/ecobrick2.webp') }}')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -51,7 +51,7 @@
             </p>
             <p>
               <img
-                src="{{ asset('frontend/images/ecobrick1.jpg') }}"
+                src="{{ asset('frontend/images/ecobrick1.webp') }}"
                 alt="Ecobrick RW 2"
                 class="img-fluid mx-auto d-block"
               />

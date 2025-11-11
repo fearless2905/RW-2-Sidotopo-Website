@@ -284,13 +284,20 @@
           lastScrollTop = scrollTop;
         });
 
-        // Dropdown klik di mobile
+        // Dropdown klik di mobile dan desktop
         $(".dropdown-toggle").on("click", function (e) {
+          var $dropdown = $(this).next(".dropdown-menu");
           if ($(window).width() < 992) {
-            e.preventDefault();
-            var $dropdown = $(this).next(".dropdown-menu");
+            // Mobile: toggle slide, prevent default only if not expanded
+            if (!$dropdown.hasClass("show")) {
+              e.preventDefault();
+            }
             $(".dropdown-menu").not($dropdown).slideUp(200).removeClass("show");
             $dropdown.stop(true, true).slideToggle(200).toggleClass("show");
+          } else {
+            // Desktop: toggle show class, allow default behavior for hover
+            $(".dropdown-menu").not($dropdown).removeClass("show");
+            $dropdown.toggleClass("show");
           }
         });
 
