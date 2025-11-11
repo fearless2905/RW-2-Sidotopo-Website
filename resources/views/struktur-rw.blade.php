@@ -19,7 +19,7 @@
           <div class="org-level">
             <div class="org-node ketua-rw">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_2.webp') }}" alt="Ketua RW">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Ketua RW">
               </div>
               <div class="node-content">
                 <h5>Ketua RW</h5>
@@ -37,7 +37,7 @@
           <div class="org-level">
             <div class="org-node wakil-ketua">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_3.webp') }}" alt="Wakil Ketua I">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Wakil Ketua I">
               </div>
               <div class="node-content">
                 <h6>Wakil Ketua I</h6>
@@ -46,7 +46,7 @@
             </div>
             <div class="org-node wakil-ketua">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_4.webp') }}" alt="Wakil Ketua II">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Wakil Ketua II">
               </div>
               <div class="node-content">
                 <h6>Wakil Ketua II</h6>
@@ -55,7 +55,7 @@
             </div>
             <div class="org-node wakil-ketua">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_1.webp') }}" alt="Wakil Ketua III">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Wakil Ketua III">
               </div>
               <div class="node-content">
                 <h6>Wakil Ketua III</h6>
@@ -73,7 +73,7 @@
           <div class="org-level">
             <div class="org-node sekretaris">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_2.webp') }}" alt="Sekretaris">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Sekretaris">
               </div>
               <div class="node-content">
                 <h6>Sekretaris</h6>
@@ -82,7 +82,7 @@
             </div>
             <div class="org-node bendahara">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_3.webp') }}" alt="Bendahara">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Bendahara">
               </div>
               <div class="node-content">
                 <h6>Bendahara</h6>
@@ -100,7 +100,7 @@
           <div class="org-level">
             <div class="org-node bidang">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_4.webp') }}" alt="Bidang Keamanan">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Bidang Keamanan">
               </div>
               <div class="node-content">
                 <h6>Bidang Keamanan</h6>
@@ -109,7 +109,7 @@
             </div>
             <div class="org-node bidang">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_1.webp') }}" alt="Bidang Kesra dan Sosial">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Bidang Kesra dan Sosial">
               </div>
               <div class="node-content">
                 <h6>Bidang Kesra dan Sosial</h6>
@@ -127,7 +127,7 @@
           <div class="org-level">
             <div class="org-node penasehat">
               <div class="avatar-wrapper">
-                <img src="{{ asset('frontend/images/person_1.webp') }}" alt="Penasehat">
+                <img src="{{ asset('frontend/images/ketua.webp') }}" alt="Penasehat">
               </div>
               <div class="node-content">
                 <h5>Penasehat</h5>
