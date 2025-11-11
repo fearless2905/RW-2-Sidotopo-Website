@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Berita Detail - RW 2 Sidotopo')
+@section('title', 'Pembukaan KKN SDGs Kelompok 4 - RW 2 Sidotopo')
 
 @section('content')
     <div
@@ -23,7 +23,7 @@
             >
               <span class="mr-2"><a href="{{ route('home') }}">Beranda</a></span>
               <span class="mr-2"><a href="{{ route('blog') }}">Berita</a></span>
-              <span>Blog Single</span>
+              <span>Pembukaan KKN SDGs Kelompok 4</span>
             </p>
             <h1
               class="mb-3 bread"
