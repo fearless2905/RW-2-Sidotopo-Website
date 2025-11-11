@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Profil RW 2 - RW 2 Sidotopo')
+
 @section('content')
     <!-- END nav -->
 
@@ -73,31 +75,22 @@
 
     <section class="ftco-section bg-light">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 heading-section ftco-animate text-center">
-            <span class="subheading">Visi dan Misi</span>
-            <h2 class="mb-4">RW 2 Sidotopo</h2>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row d-md-flex">
           <div class="col-md-6 ftco-animate">
-            <div class="card">
-              <div class="card-header">
-                <h3>Visi</h3>
-              </div>
-              <div class="card-body">
-                <p>
-                  Menjadi RW yang mandiri, berkelanjutan, dan harmonis melalui inovasi teknologi, edukasi masyarakat, serta pengembangan potensi desa untuk mencapai kesejahteraan bersama.
-                </p>
-              </div>
+            <div class="map-container">
+              <img src="{{ asset('frontend/images/profil.jpg') }}" alt="RW 2 Sidotopo" class="img-fluid rounded">
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="card">
-              <div class="card-header">
+            <div class="row">
+              <div class="col-md-12">
+                <span class="subheading">Visi dan Misi</span>
+                <h2 class="mb-4">RW 2 Sidotopo</h2>
+                <h3>Visi</h3>
+                <p>
+                  Menjadi RW yang mandiri, berkelanjutan, dan harmonis melalui inovasi teknologi, edukasi masyarakat, serta pengembangan potensi desa untuk mencapai kesejahteraan bersama.
+                </p>
                 <h3>Misi</h3>
-              </div>
-              <div class="card-body">
                 <ul>
                   <li>Meningkatkan partisipasi masyarakat dalam kegiatan sosial dan pembangunan.</li>
                   <li>Mengembangkan program edukasi dan pelatihan untuk generasi muda.</li>
