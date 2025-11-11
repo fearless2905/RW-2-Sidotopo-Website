@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" href="{{ asset('frontend/images/logoweb.png') }}" />
 
     <style>
-      /* ====== Dropdown umum (desktop) ====== */
+      /* ====== Dropdown umum ====== */
       .dropdown-menu {
         opacity: 0;
         visibility: hidden;
@@ -43,8 +43,8 @@
         z-index: 1000;
       }
 
-      .nav-item.dropdown.show .dropdown-menu,
-      .nav-item.dropdown:hover .dropdown-menu {
+      /* hanya aktif kalau .show, bukan hover */
+      .nav-item.dropdown.show .dropdown-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -145,13 +145,10 @@
             </li>
             <li class="nav-item dropdown {{ request()->routeIs('about') || request()->routeIs('profil') || request()->routeIs('struktur-rw') || request()->routeIs('pengurus-rt') ? 'active' : '' }}">
               <a
-                href="#"
+                href="javascript:void(0)"
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
               >
                 Tentang Kami
               </a>
@@ -176,83 +173,83 @@
       </div>
     </nav>
 
-    {{-- Bagian konten halaman --}}
+    {{-- Konten --}}
     <main>
       @yield('content')
     </main>
 
-        {{-- Footer --}}
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
-            <div class="container">
-              <div class="row mb-5">
-                <div class="col-md">
-                  <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">RW 2 Sidotopo</h2>
-                    <p>Website Informasi Seputar RW 2 Sidotopo Surabaya</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                      <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                      <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                      <li class="ftco-animate"><a href="https://www.instagram.com/rw2sidotopo/"><span class="icon-instagram"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="ftco-footer-widget mb-4 ml-md-5">
-                    <h2 class="ftco-heading-2">Tentang Kami</h2>
-                    <ul class="list-unstyled">
-                      <li><a href="{{ route('profil') }}" class="py-2 d-block">Profil</a></li>
-                      <li><a href="{{ route('struktur-rw') }}" class="py-2 d-block">Struktur RW</a></li>
-                      <li><a href="{{ route('pengurus-rt') }}" class="py-2 d-block">Struktur RT</a></li>
-                      <li><a href="{{ route('about') }}" class="py-2 d-block">KKN Dharmakarya</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Dokumentasi</h2>
-                    <ul class="list-unstyled">
-                      <li><a href="{{ route('galeri') }}" class="py-2 d-block">Galeri</a></li>
-                      <li><a href="{{ route('blog') }}" class="py-2 d-block">Berita</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Ada Pertanyaan?</h2>
-                    <div class="block-23 mb-3">
-                      <ul>
-                        <li>
-                          <a href="https://maps.app.goo.gl/EX9NN1gY4Lc7AT9G9" target="_blank">
-                            <span class="icon icon-map-marker"></span>
-                            <span class="text">JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#"><span class="icon icon-phone"></span><span class="text">+6285964165170</span></a>
-                        </li>
-                        <li>
-                          <a href="#"><span class="icon icon-envelope"></span><span class="text">rw2sidotopo@gmail.com</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <p>
-                    Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script>
-                    All rights reserved | Made with <i class="icon-heart" aria-hidden="true"></i> by
-                    <a href="https://colorlib.com" target="_blank">Kelompok 4 KKN UPNVJT 2025</a>
-                  </p>
-                </div>
+    {{-- Footer --}}
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">RW 2 Sidotopo</h2>
+              <p>Website Informasi Seputar RW 2 Sidotopo Surabaya</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/rw2sidotopo/"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Tentang Kami</h2>
+              <ul class="list-unstyled">
+                <li><a href="{{ route('profil') }}" class="py-2 d-block">Profil</a></li>
+                <li><a href="{{ route('struktur-rw') }}" class="py-2 d-block">Struktur RW</a></li>
+                <li><a href="{{ route('pengurus-rt') }}" class="py-2 d-block">Struktur RT</a></li>
+                <li><a href="{{ route('about') }}" class="py-2 d-block">KKN Dharmakarya</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Dokumentasi</h2>
+              <ul class="list-unstyled">
+                <li><a href="{{ route('galeri') }}" class="py-2 d-block">Galeri</a></li>
+                <li><a href="{{ route('blog') }}" class="py-2 d-block">Berita</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Ada Pertanyaan?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <a href="https://maps.app.goo.gl/EX9NN1gY4Lc7AT9G9" target="_blank">
+                      <span class="icon icon-map-marker"></span>
+                      <span class="text">JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon icon-phone"></span><span class="text">+6285964165170</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon icon-envelope"></span><span class="text">rw2sidotopo@gmail.com</span></a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </footer>
+          </div>
+        </div>
 
-    {{-- Scroll to Top Button --}}
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              All rights reserved | Made with <i class="icon-heart" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Kelompok 4 KKN UPNVJT 2025</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {{-- Scroll to Top --}}
     <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     {{-- JS --}}
@@ -284,30 +281,33 @@
           lastScrollTop = scrollTop;
         });
 
-        // Dropdown klik di mobile dan desktop
+        // ===== Dropdown hanya klik =====
         $(".dropdown-toggle").on("click", function (e) {
-          var $dropdown = $(this).next(".dropdown-menu");
-          if ($(window).width() < 992) {
-            // Mobile: toggle slide, prevent default only if not expanded
-            if (!$dropdown.hasClass("show")) {
-              e.preventDefault();
-            }
-            $(".dropdown-menu").not($dropdown).slideUp(200).removeClass("show");
-            $dropdown.stop(true, true).slideToggle(200).toggleClass("show");
-          } else {
-            // Desktop: toggle show class, allow default behavior for hover
-            $(".dropdown-menu").not($dropdown).removeClass("show");
-            $dropdown.toggleClass("show");
+          e.preventDefault();
+          e.stopPropagation();
+
+          var $parent = $(this).parent(".dropdown");
+          var $menu = $parent.find(".dropdown-menu");
+
+          $(".dropdown-menu").not($menu).slideUp(200).removeClass("show");
+          $(".dropdown").not($parent).removeClass("show");
+
+          $parent.toggleClass("show");
+          $menu.stop(true, true).slideToggle(200).toggleClass("show");
+        });
+
+        // Tutup dropdown saat klik di luar
+        $(document).on("click", function (e) {
+          if (!$(e.target).closest(".dropdown").length) {
+            $(".dropdown-menu").slideUp(200).removeClass("show");
+            $(".dropdown").removeClass("show");
           }
         });
 
-        // Scroll to top button
+        // Scroll to top
         $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('#scrollToTopBtn').fadeIn();
-          } else {
-            $('#scrollToTopBtn').fadeOut();
-          }
+          if ($(this).scrollTop() > 100) $('#scrollToTopBtn').fadeIn();
+          else $('#scrollToTopBtn').fadeOut();
         });
 
         $('#scrollToTopBtn').click(function () {
