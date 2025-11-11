@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>RW 2 Sidotopo</title>
+    <title>@yield('title', 'RW 2 Sidotopo')</title>
 
     {{-- Fonts --}}
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
@@ -24,48 +24,102 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
+    {{-- Favicon --}}
+    <link rel="icon" type="image/png" href="{{ asset('frontend/images/logoweb.png') }}" />
+
     <style>
-        /* Your custom CSS here */
-        .dropdown-arrow {
-            transition: transform 0.3s ease-out;
-            margin-left: 5px;
+      /* ====== Dropdown umum (desktop) ====== */
+      .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+      }
+
+      .nav-item.dropdown.show .dropdown-menu,
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .nav-item a:hover {
+        background-color: transparent !important;
+      }
+
+      .navbar-hide {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* ===== FIX untuk tampilan mobile ===== */
+      @media (max-width: 991.98px) {
+        .navbar-nav .dropdown-menu {
+          position: static !important;
+          display: none;
+          opacity: 0;
+          transform: translateY(-5px);
+          visibility: hidden;
+          background: #fff !important;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          border-radius: 5px;
+          margin: 5px 0;
+          transition: all 0.25s ease;
         }
 
-        .nav-item.dropdown .dropdown-arrow {
-            transform: rotate(0deg); /* Start facing right */
+        .navbar-nav .dropdown.show > .dropdown-menu {
+          display: block !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          transform: translateY(0) !important;
         }
 
-        .nav-item.dropdown.show .dropdown-arrow,
-        .nav-item.dropdown:hover .dropdown-arrow {
-            transform: rotate(90deg); /* Rotate to down on hover */
+        .navbar-nav .dropdown-menu .dropdown-item {
+          color: #333 !important;
+          padding: 0.6rem 1.2rem !important;
+          background: transparent !important;
+          border: none !important;
         }
 
-        .dropdown-menu {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
-            display: block; /* Override default display: none if any framework uses it */
-            position: absolute; /* Usually set by framework, but ensure it's here */
-            background-color: white; /* Example */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Example */
-            padding: 10px; /* Example */
-            min-width: 160px; /* Example */
-            z-index: 1000; /* Ensure it's above other content */
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
+          background-color: rgba(0, 0, 0, 0.05) !important;
         }
 
-        .nav-item.dropdown.show .dropdown-menu,
-        .nav-item.dropdown:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+        .navbar-nav .nav-item {
+          margin-bottom: 0 !important;
         }
+      }
 
-        /* Remove white box on menu hover, keep only for dropdown */
-        .nav-item a:hover {
-            background-color: transparent !important;
-        }
+      /* Scroll to top button */
+      #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #343a40;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 4px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #495057;
+      }
     </style>
+  </head>
 
   <body>
     {{-- Navbar --}}
@@ -89,8 +143,16 @@
             <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
               <a href="{{ route('home') }}" class="nav-link">Beranda</a>
             </li>
-            <li class="nav-item dropdown {{ request()->routeIs('about') ? 'active' : '' }}">
-              <a href="{{ route('about') }}" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown {{ request()->routeIs('about') || request()->routeIs('profil') || request()->routeIs('struktur-rw') || request()->routeIs('pengurus-rt') ? 'active' : '' }}">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Tentang Kami
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -109,92 +171,89 @@
             <li class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">
               <a href="{{ route('contact') }}" class="nav-link">Kontak</a>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
 
     {{-- Bagian konten halaman --}}
-    @yield('content')
+    <main>
+      @yield('content')
+    </main>
 
-    {{-- Footer --}}
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">RW 2 Sidotopo</h2>
-              <p>Website Informasi Seputar RW 2 Sidotopo Surabaya</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/rw2sidotopo/"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Tentang Kami</h2>
-              <ul class="list-unstyled">
-                <li><a href="{{ route('profil') }}" class="py-2 d-block">Profil</a></li>
-                <li><a href="{{ route('struktur-rw') }}" class="py-2 d-block">Struktur RW</a></li>
-                <li><a href="{{ route('pengurus-rt') }}" class="py-2 d-block">Struktur RT</a></li>
-                <li><a href="{{ route('about') }}" class="py-2 d-block">KKN Dharmakarya</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Dokumentasi</h2>
-              <ul class="list-unstyled">
-                <li><a href="{{ route('galeri') }}" class="py-2 d-block">Galeri</a></li>
-                <li><a href="{{ route('blog') }}" class="py-2 d-block">Berita</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Ada Pertanyaan?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li>
-                    <a href="https://maps.app.goo.gl/EX9NN1gY4Lc7AT9G9" target="_blank">
-                      <span class="icon icon-map-marker"></span
-                      ><span class="text"
-                        >JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span
-                      >
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-phone"></span
-                      ><span class="text">+6285964165170</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-envelope"></span
-                      ><span class="text">rw2sidotopo@gmail.com</span></a
-                    >
-                  </li>
-                </ul>
+        {{-- Footer --}}
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-md">
+                  <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">RW 2 Sidotopo</h2>
+                    <p>Website Informasi Seputar RW 2 Sidotopo Surabaya</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                      <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="https://www.instagram.com/rw2sidotopo/"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="ftco-footer-widget mb-4 ml-md-5">
+                    <h2 class="ftco-heading-2">Tentang Kami</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="{{ route('profil') }}" class="py-2 d-block">Profil</a></li>
+                      <li><a href="{{ route('struktur-rw') }}" class="py-2 d-block">Struktur RW</a></li>
+                      <li><a href="{{ route('pengurus-rt') }}" class="py-2 d-block">Struktur RT</a></li>
+                      <li><a href="{{ route('about') }}" class="py-2 d-block">KKN Dharmakarya</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Dokumentasi</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="{{ route('galeri') }}" class="py-2 d-block">Galeri</a></li>
+                      <li><a href="{{ route('blog') }}" class="py-2 d-block">Berita</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Ada Pertanyaan?</h2>
+                    <div class="block-23 mb-3">
+                      <ul>
+                        <li>
+                          <a href="https://maps.app.goo.gl/EX9NN1gY4Lc7AT9G9" target="_blank">
+                            <span class="icon icon-map-marker"></span>
+                            <span class="text">JL. SIDOTOPO LOR I/21, Kelurahan Sidotopo, Kecamatan Semampir, Kota Surabaya</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#"><span class="icon icon-phone"></span><span class="text">+6285964165170</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span class="icon icon-envelope"></span><span class="text">rw2sidotopo@gmail.com</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Made with <i class="icon-heart" aria-hidden="true"></i> by
+                    <a href="https://colorlib.com" target="_blank">Kelompok 4 KKN UPNVJT 2025</a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </footer>
 
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright &copy; <script>document.write(new Date().getFullYear());</script>
-              All rights reserved | Made with <i class="icon-heart" aria-hidden="true"></i> by
-              <a href="https://colorlib.com" target="_blank">Kelompok 4 KKN UPNVJT 2025</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    {{-- Scroll to Top Button --}}
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     {{-- JS --}}
     <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
@@ -212,5 +271,43 @@
     <script src="{{ asset('frontend/js/jquery.timepicker.min.js') }}"></script>
     <script src="{{ asset('frontend/js/scrollax.min.js') }}"></script>
     <script src="{{ asset('frontend/js/main.js') }}"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Navbar hide on scroll
+        var lastScrollTop = 0;
+        var navbar = $(".navbar");
+        $(window).scroll(function () {
+          var scrollTop = $(this).scrollTop();
+          if (scrollTop > lastScrollTop && scrollTop > 100) navbar.addClass("navbar-hide");
+          else navbar.removeClass("navbar-hide");
+          lastScrollTop = scrollTop;
+        });
+
+        // Dropdown klik di mobile
+        $(".dropdown-toggle").on("click", function (e) {
+          if ($(window).width() < 992) {
+            e.preventDefault();
+            var $dropdown = $(this).next(".dropdown-menu");
+            $(".dropdown-menu").not($dropdown).slideUp(200).removeClass("show");
+            $dropdown.stop(true, true).slideToggle(200).toggleClass("show");
+          }
+        });
+
+        // Scroll to top button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#scrollToTopBtn').fadeIn();
+          } else {
+            $('#scrollToTopBtn').fadeOut();
+          }
+        });
+
+        $('#scrollToTopBtn').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
