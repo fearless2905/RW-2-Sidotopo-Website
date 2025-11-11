@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'KKN Dharmakarya - RW 2 Sidotopo')
+
 @section('content')
     <!-- END nav -->
 
@@ -22,7 +24,7 @@
               data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
             >
               <span class="mr-2"><a href="{{ route('home') }}">Beranda</a></span>
-              <span>Tentang Kami</span>
+              <span>Dharmakarya</span>
             </p>
             <h1
               class="mb-3 bread"
@@ -114,7 +116,11 @@
                   >
                     <div id="struktur-rw"></div>
                     <div>
-                      <h2 class="mb-4">Arti Bentuk Pita</h2>
+                      <h2 class="mb-4">Apa itu Dharmakarya?</h2>
+                      <p>
+                        "Dharmakarya" berarti "Tindakan Kebaikan", menunjukkan komitmen kelompok untuk melakukan hal-hal yang benar dan bermanfaat bagi masyarakat. Kelompok KKN Dharmakarya terdiri dari mahasiswa Universitas Pembangunan Nasional "Veteran" Jawa Timur yang berkomitmen untuk berkontribusi positif di RW 2 Sidotopo melalui program-program inovatif dan berkelanjutan.
+                      </p>
+                      <h3 class="mb-3">Arti Bentuk Pita</h3>
                       <p>
                         Elemen pita melambangkan ikatan dan kebersamaan.
                         Bentuknya yang mengalir mencerminkan semangat gotong
@@ -143,6 +149,107 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Program Kerja dan Kegiatan Dharmakarya</h2>
+            <span class="subheading">Kontribusi Kami untuk RW 2 Sidotopo</span>
+          </div>
+        </div>
+
+        <!-- Sosialisasi Branding UMKM -->
+        <div class="row d-md-flex mb-5">
+          <div class="col-md-6 ftco-animate">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mb-4">Sosialisasi Branding UMKM</h3>
+                <p>
+                  Program sosialisasi branding UMKM bertujuan untuk meningkatkan kesadaran masyarakat tentang pentingnya branding dalam pengembangan usaha mikro kecil dan menengah. Kegiatan ini meliputi edukasi tentang strategi pemasaran digital, pembuatan logo sederhana, dan teknik promosi yang efektif untuk membantu UMKM lokal berkembang.
+                </p>
+                <p>
+                  Melalui workshop interaktif, kami berbagi pengetahuan praktis yang dapat langsung diterapkan oleh pengusaha di RW 2 Sidotopo untuk meningkatkan daya saing produk mereka di pasar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/proker1.JPG') }}">
+              <img src="{{ asset('frontend/images/proker1.JPG') }}" alt="Sosialisasi Branding UMKM" class="img-fluid rounded">
+            </a>
+          </div>
+        </div>
+
+        <!-- Kebun Asri -->
+        <div class="row d-md-flex mb-5">
+          <div class="col-md-6 ftco-animate">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/dharmakarya.jpg') }}">
+              <img src="{{ asset('frontend/images/dharmakarya.jpg') }}" alt="Kebun Asri" class="img-fluid rounded">
+            </a>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mb-4">Kebun Asri</h3>
+                <p>
+                  Program Kebun Asri fokus pada revitalisasi lahan yang tidak terawat menjadi area hijau produktif. Kami membersihkan lahan dari sampah dan gulma, kemudian menanam berbagai tanaman bermanfaat seperti tomat, cabai, sereh, bayam brazil, adas, dan kunyit.
+                </p>
+                <p>
+                  Inisiatif ini tidak hanya memperbaiki estetika lingkungan tetapi juga memberikan manfaat ekonomi jangka panjang bagi masyarakat melalui hasil panen yang dapat dimanfaatkan untuk konsumsi atau dijual.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mural Daun Pohon -->
+        <div class="row d-md-flex mb-5">
+          <div class="col-md-6 ftco-animate">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mb-4">Mural Daun Pohon</h3>
+                <p>
+                  Kegiatan mural daun pohon melibatkan anak-anak RW 2 dalam proses kreatif pembuatan seni dinding. Menggunakan warna-warna alami yang terinspirasi dari daun pohon, anak-anak diajak berkreasi untuk menghasilkan karya seni yang mempercantik lingkungan.
+                </p>
+                <p>
+                  Aktivitas ini bertujuan untuk mengembangkan kreativitas anak-anak sekaligus meningkatkan kesadaran akan pentingnya pelestarian lingkungan melalui seni dan edukasi yang menyenangkan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/mural.jpg') }}">
+              <img src="{{ asset('frontend/images/mural.jpg') }}" alt="Mural Daun Pohon" class="img-fluid rounded">
+            </a>
+          </div>
+        </div>
+
+        <!-- Ecobrick RW 2 -->
+        <div class="row d-md-flex mb-5">
+          <div class="col-md-6 ftco-animate">
+            <a href="#" class="open-gallery" data-img="{{ asset('frontend/images/ecobrick.JPG') }}">
+              <img src="{{ asset('frontend/images/ecobrick.JPG') }}" alt="Ecobrick RW 2" class="img-fluid rounded">
+            </a>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mb-4">Ecobrick RW 2</h3>
+                <p>
+                  Program Ecobrick menggunakan botol plastik bekas untuk membentuk struktur yang kuat dan fungsional. Kami mengumpulkan botol-botol plastik dari masyarakat dan mengisinya dengan plastik yang tidak dapat didaur ulang, kemudian membentuknya menjadi tulisan "RW 2".
+                </p>
+                <p>
+                  Inisiatif ini tidak hanya mengurangi sampah plastik di lingkungan tetapi juga menciptakan landmark unik yang menjadi simbol kebersamaan dan kepedulian terhadap lingkungan di RW 2 Sidotopo.
+                </p>
               </div>
             </div>
           </div>
@@ -193,7 +300,7 @@
                     <div id="menuone" class="collapse show">
                       <div class="card-body">
                         <p>
-                          KKNT SDGs adalah program Kuliah Kerja Nyata yang berfokus pada Sustainable Development Goals (SDGs) atau Tujuan Pembangunan Berkelanjutan. Program ini bertujuan untuk memberikan pengalaman praktis kepada mahasiswa dalam mengimplementasikan SDGs di masyarakat.
+                          KKNT SDGs adalah program Kuliah Kerja Nyata yang berfokus pada Sustainable Development Goals (SDGs) atau Tujuan Pembangunan Berkelanjutan. Program ini bertujuan untuk memberikan pengalaman praktis kepada mahasiswa dalam mengimplementasikan SDGs di masyarakat melalui kegiatan nyata seperti pengembangan potensi desa, edukasi masyarakat, dan inovasi teknologi.
                         </p>
                       </div>
                     </div>
@@ -217,7 +324,7 @@
                     <div id="menutwo" class="collapse">
                       <div class="card-body">
                         <p>
-                          Tema KKNT Batch 2 Kelompok 4 adalah "Pengembangan Potensi Desa Melalui Inovasi Teknologi dan Edukasi Masyarakat untuk Mewujudkan Desa Mandiri Berkelanjutan".
+                          Tema KKNT Batch 2 Kelompok 4 adalah "Pengembangan Potensi Desa Melalui Inovasi Teknologi dan Edukasi Masyarakat untuk Mewujudkan Desa Mandiri Berkelanjutan". Kelompok Dharmakarya fokus pada pengembangan RW 2 Sidotopo melalui program-program inovatif yang melibatkan masyarakat setempat.
                         </p>
                       </div>
                     </div>
@@ -242,7 +349,7 @@
                     <div id="menu3" class="collapse">
                       <div class="card-body">
                         <p>
-                          Dosen Pendamping Lapangan (DPL) untuk KKNT SDGs Batch 2 Kelompok 4 adalah Bapak Mohammad Syaraffah, M.I.Kom.
+                          Dosen Pendamping Lapangan (DPL) untuk KKNT SDGs Batch 2 Kelompok 4 adalah Bapak Mohammad Syaraffah, M.I.Kom. dari Universitas Pembangunan Nasional "Veteran" Jawa Timur.
                         </p>
                       </div>
                     </div>
@@ -268,7 +375,7 @@
                     <div id="menu4" class="collapse">
                       <div class="card-body">
                         <p>
-                          Durasi KKNT SDGs Batch 2 Kelompok 4 dimulai dari tanggal 13 Oktober untuk survei, pembukaan pada tanggal 20 Oktober, dan penutupan pada tanggal 13 November.
+                          Durasi KKNT SDGs Batch 2 Kelompok 4 dimulai dari tanggal 13 Oktober untuk survei, pembukaan pada tanggal 20 Oktober, dan penutupan pada tanggal 13 November 2024. Program ini berlangsung selama kurang lebih 1 bulan dengan fokus pada implementasi program kerja di RW 2 Sidotopo.
                         </p>
                       </div>
                     </div>
@@ -292,7 +399,7 @@
                     <div id="menu5" class="collapse">
                       <div class="card-body">
                         <p>
-                          Kegiatan KKNT meliputi survei lokasi, sosialisasi program, pelatihan masyarakat, pengembangan potensi desa melalui teknologi, edukasi SDGs, dan evaluasi program untuk memastikan keberlanjutan.
+                          Kegiatan KKNT meliputi: Sosialisasi Branding UMKM untuk meningkatkan kesadaran masyarakat tentang pentingnya branding, Program Kebun Asri dengan penanaman tomat, cabai, sereh, bayam brazil, adas, dan kunyit, Mural Daun Pohon yang melibatkan anak-anak RW 2, serta Ecobrick RW 2 dari botol plastik bekas. Selain itu, ada juga survei lokasi, edukasi SDGs, dan evaluasi program.
                         </p>
                       </div>
                     </div>
@@ -316,7 +423,7 @@
                     <div id="menu6" class="collapse">
                       <div class="card-body">
                         <p>
-                          Untuk informasi lebih lanjut tentang KKNT SDGs Batch 2 Kelompok 4, silakan hubungi DPL Bapak Mohammad Syaraffah, M.I.Kom. atau kunjungi situs resmi Universitas Pembangunan Nasional "Veteran" Jawa Timur.
+                          Untuk informasi lebih lanjut tentang KKNT SDGs Batch 2 Kelompok 4, silakan hubungi DPL Bapak Mohammad Syaraffah, M.I.Kom., kunjungi website resmi RW 2 Sidotopo, atau ikuti akun Instagram @dharmakaryasidotopo. Universitas Pembangunan Nasional "Veteran" Jawa Timur juga menyediakan informasi di situs resmi universitas.
                         </p>
                       </div>
                     </div>
@@ -329,5 +436,97 @@
       </div>
     </section>
 
+{{-- ===== Modal Popup ===== --}}
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content border-0 shadow bg-transparent">
+      <div class="modal-body text-center p-0 position-relative">
+        <img id="modalImage" src="" class="img-fluid rounded zoomable" style="max-height: 80vh; object-fit: contain; cursor: grab;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{{-- ===== CSS Zoom ===== --}}
+<style>
+  .zoomable {
+    transition: transform 0.2s ease;
+  }
+</style>
+
+{{-- ===== Script ===== --}}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = $('#galleryModal');
+    const modalImg = document.getElementById('modalImage');
+
+    let scale = 1;
+    let isDragging = false;
+    let startX, startY;
+    let originX = 0, originY = 0;
+
+    // Saat gambar diklik → buka modal
+    $('.open-gallery').on('click', function (e) {
+      e.preventDefault();
+      const imgSrc = $(this).data('img');
+      modalImg.src = imgSrc;
+      scale = 1;
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+      modal.modal('show');
+    });
+
+    // Double-click untuk zoom
+    modalImg.addEventListener('dblclick', function () {
+      if (scale === 1) {
+        scale = 2; // Zoom in
+      } else {
+        scale = 1; // Zoom out
+      }
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Zoom dengan scroll
+    modalImg.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      if (e.deltaY < 0) scale += 0.1;
+      else if (scale > 1) scale -= 0.1;
+
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Drag saat di-zoom
+    modalImg.addEventListener('mousedown', function (e) {
+      if (scale <= 1) return;
+      isDragging = true;
+      startX = e.clientX - originX;
+      startY = e.clientY - originY;
+      modalImg.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mouseup', function () {
+      isDragging = false;
+      modalImg.style.cursor = 'grab';
+    });
+
+    window.addEventListener('mousemove', function (e) {
+      if (!isDragging) return;
+      originX = e.clientX - startX;
+      originY = e.clientY - startY;
+      modalImg.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+    });
+
+    // Reset zoom saat modal ditutup
+    modal.on('hidden.bs.modal', function () {
+      scale = 1;
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+    });
+  });
+</script>
 
 @endsection
