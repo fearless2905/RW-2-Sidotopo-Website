@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Struktur RW 2 - RW 2 Sidotopo')
+
 @section('content')
 <section class="ftco-section">
   <div class="container">
