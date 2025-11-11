@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Beranda - RW 2 Sidotopo')
+
 @section('content')
     <!-- END nav -->
 
@@ -50,17 +52,16 @@
               <div class="d-flex justify-content-center">
                 <div class="icon">
                   <img
-                    src="{{ asset('frontend/images/lokasi.png') }}"
+                    src="{{ asset('frontend/images/house.png') }}"
                     alt="Eco-Friendly Icon"
                     style="width: 50px; height: auto"
                   />
                 </div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Profil & Wilayah</h3>
+                <h3 class="heading mb-3">Profil RW 2</h3>
                 <p>
-                  Kenali lingkungan RW kita lebih dekat, mencakup sejarah
-                  singkat, batas wilayah, dan jumlah RT yang ada.
+                  Kenali profil lengkap RW 2 Sidotopo, termasuk visi misi, sejarah, dan informasi wilayah Kelurahan Sidotopo.
                 </p>
               </div>
             </div>
@@ -70,17 +71,16 @@
               <div class="d-flex justify-content-center">
                 <div class="icon">
                   <img
-                    src="{{ asset('frontend/images/kegiatann.png') }}"
+                    src="{{ asset('frontend/images/organization-chart.png') }}"
                     alt="Eco-Friendly Icon"
                     style="width: 50px; height: auto"
                   />
                 </div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Kegiatan Warga</h3>
+                <h3 class="heading mb-3">Struktur RW 2</h3>
                 <p>
-                  Ikuti jadwal kerja bakti, perayaan 17 Agustus, posyandu, dan
-                  berbagai acara untuk mempererat kebersamaan kita.
+                  Lihat struktur organisasi RW 2, mulai dari Ketua RW hingga Bidang Keamanan dan Kesra.
                 </p>
               </div>
             </div>
@@ -90,17 +90,16 @@
               <div class="d-flex justify-content-center">
                 <div class="icon">
                   <img
-                    src="{{ asset('frontend/images/info.png') }}"
+                    src="{{ asset('frontend/images/album.png') }}"
                     alt="Eco-Friendly Icon"
                     style="width: 50px; height: auto"
                   />
                 </div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Informasi & Pengumuman</h3>
+                <h3 class="heading mb-3">Galeri</h3>
                 <p>
-                  Dapatkan info terbaru dari pengurus RW, jadwal siskamling, dan
-                  program kerja yang sedang berjalan di lingkungan RW 2.
+                  Lihat dokumentasi kegiatan KKNT SDGs, Posyandu, Senam Bersama, dan Bank Sampah di galeri foto.
                 </p>
               </div>
             </div>
@@ -110,17 +109,16 @@
               <div class="d-flex justify-content-center">
                 <div class="icon">
                   <img
-                    src="{{ asset('frontend/images/image.png') }}"
+                    src="{{ asset('frontend/images/news.png') }}"
                     alt="Eco-Friendly Icon"
                     style="width: 50px; height: auto"
                   />
                 </div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Fasilitas Umum</h3>
+                <h3 class="heading mb-3">Berita</h3>
                 <p>
-                  Temukan lokasi dan informasi Balai Warga, Posyandu, sarana
-                  olahraga, dan fasilitas lain di lingkungan RW kita.
+                  Dapatkan informasi terbaru seputar kegiatan RW 2, pengumuman, dan berita terkini dari lingkungan.
                 </p>
               </div>
             </div>
@@ -229,6 +227,9 @@
                 </div>
               </div>
             </div>
+            <div class="text-center mt-4">
+              <a href="{{ route('galeri') }}" class="btn btn-primary">Lihat Selengkapnya</a>
+            </div>
           </div>
         </div>
       </div>
@@ -301,7 +302,7 @@
                     <div class="testimony-wrap d-flex">
                       <div
                         class="user-img mb-5"
-                      style="background-image: url({{ asset('frontend/images/person_3.jpg') }})"
+                      style="background-image: url({{ asset('frontend/images/person_1.jpg') }})"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -331,152 +332,168 @@
         <div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
             <span class="subheading">UMKM</span>
-            <h2 class="mb-4"><strong>Kuliner</strong> &amp; UMKM Sekitar</h2>
+            <h2 class="mb-4"><strong>UMKM Sekitar</strong>  RW 2</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/jagungtiti') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/jagungtiti.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
-                </div>
-              </a>
-              <div class="text p-3">
-                <h3><a href="{{ url('/jagungtiti') }}">Jagung Titi</a></h3>
-                <p class="rate">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star-o"></i>
-                  <span>8 Rating</span>
-                </p>
-                <p>
-                  Makanan khas dari Flores yang terbuat dari jagung yang
-                  dipipihkan dan dibakar, sering disajikan dengan kelapa parut
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span
-                    ><i class="icon-map-o"></i> Flores, Nusa Tenggara
-                    Timur</span
+          <div class="col-md-12">
+            <div class="destination-slider owl-carousel ftco-animate" id="umkm-carousel">
+              <div class="item">
+                <div class="destination">
+                  <a
+                    href="#"
+                    class="img img-2 d-flex justify-content-center align-items-center open-umkm"
+                    style="background-image: url({{ asset('frontend/images/aksesoris.jpg') }})"
+                    data-img="{{ asset('frontend/images/aksesoris.jpg') }}"
                   >
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/papeda') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/papeda.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
+                    <div
+                      class="icon d-flex justify-content-center align-items-center"
+                    >
+                      <span class="icon-search2"></span>
+                    </div>
+                  </a>
+                  <div class="text p-3">
+                    <h3>Aksesoris Lengkap</h3>
+                    <p class="rate">
+                      <span style="font-size: 16px; font-weight: bold;">Oleh: Bu Siti Aminah</span>
+                    </p>
+                    <hr style="margin: 10px 0;" />
+                    <p>
+                      Berbagai macam aksesoris handmade seperti gelang, kalung, anting, dan tas rajut dengan desain unik.
+                    </p>
+                    <hr />
+                    <p class="bottom-area d-flex">
+                      <span
+                        ><i class="icon-map-o"></i> Gang 1 Blok A RT 1</span
+                      >
+                      <span class="ml-auto"><a href="https://wa.me/6285964165170"><i class="fab fa-whatsapp"></i> Kontak</a></span>
+                    </p>
+                  </div>
                 </div>
-              </a>
-              <div class="text p-3">
-                <h3><a href="{{ url('/papeda') }}">Papeda</a></h3>
-                <p class="rate">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star-o"></i>
-                  <span>8 Rating</span>
-                </p>
-                <p>
-                  Bubur sagu khas Papua yang biasanya dimakan dengan ikan kuah
-                  kunir
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Papua</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/satelilit') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/satelilit.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
+              <div class="item">
+                <div class="destination">
+                  <a
+                    href="#"
+                    class="img img-2 d-flex justify-content-center align-items-center open-umkm"
+                    style="background-image: url({{ asset('frontend/images/nasicampur.jpg') }})"
+                    data-img="{{ asset('frontend/images/nasicampur.jpg') }}"
+                  >
+                    <div
+                      class="icon d-flex justify-content-center align-items-center"
+                    >
+                      <span class="icon-search2"></span>
+                    </div>
+                  </a>
+                  <div class="text p-3">
+                    <h3>Nasi Campur Madura</h3>
+                    <p class="rate">
+                      <span style="font-size: 16px; font-weight: bold;">Oleh: Pak Ahmad Rahman</span>
+                    </p>
+                    <hr style="margin: 10px 0;" />
+                    <p>
+                      Nasi campur khas Madura dengan ayam rica-rica, telur, dan sambal yang pedas menggugah selera.
+                    </p>
+                    <hr />
+                    <p class="bottom-area d-flex">
+                      <span><i class="icon-map-o"></i> Gang 2 Blok B RT 2</span>
+                      <span class="ml-auto"><a href="https://wa.me/6285964165170"><i class="fab fa-whatsapp"></i> Kontak</a></span>
+                    </p>
+                  </div>
                 </div>
-              </a>
-              <div class="text p-3">
-                <h3><a href="{{ url('/satelilit') }}">Sate Lilit Ayam</a></h3>
-                <p class="rate">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star-o"></i>
-                  <span>8 Rating</span>
-                </p>
-                <p>
-                  Makanan khas Bali yang terbuat dari daging cincang yang
-                  dicampur parutan kelapa, santan, jeruk nipis, bawang merah,
-                  dan merica, lalu direkatkan ke tusuk bambu atau sereh
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Klungkung, Bali</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="destination">
-              <a
-                href="{{ url('/saksang') }}"
-                class="img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url({{ asset('frontend/images/saksang.jpg') }})"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon-search2"></span>
+              <div class="item">
+                <div class="destination">
+                  <a
+                    href="#"
+                    class="img img-2 d-flex justify-content-center align-items-center open-umkm"
+                    style="background-image: url({{ asset('frontend/images/catering.png') }})"
+                    data-img="{{ asset('frontend/images/catering.png') }}"
+                  >
+                    <div
+                      class="icon d-flex justify-content-center align-items-center"
+                    >
+                      <span class="icon-search2"></span>
+                    </div>
+                  </a>
+                  <div class="text p-3">
+                    <h3>Catering Makanan</h3>
+                    <p class="rate">
+                      <span style="font-size: 16px; font-weight: bold;">Oleh: Bu Maya Sari</span>
+                    </p>
+                    <hr style="margin: 10px 0;" />
+                    <p>
+                      Layanan catering untuk acara keluarga, ulang tahun, dan hajatan dengan menu beragam dan berkualitas.
+                    </p>
+                    <hr />
+                    <p class="bottom-area d-flex">
+                      <span><i class="icon-map-o"></i> Gang 3 Blok C RT 1</span>
+                      <span class="ml-auto"><a href="https://wa.me/6285964165170"><i class="fab fa-whatsapp"></i> Kontak</a></span>
+                    </p>
+                  </div>
                 </div>
-              </a>
-              <div class="text p-3">
-                <h3><a href="{{ url('/saksang') }}">Saksang Babi</a></h3>
-                <p class="rate">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star-o"></i>
-                  <span>8 Rating</span>
-                </p>
-                <p>
-                  Hidangan khas Batak yang terbuat dari daging babi atau ayam
-                  yang dimasak dengan rempah-rempah dan darah untuk memberi
-                  warna merah gelap
-                </p>
-                <hr />
-                <p class="bottom-area d-flex">
-                  <span><i class="icon-map-o"></i> Sumatera Utara</span>
-                  <span class="ml-auto"><a href="#">Discover</a></span>
-                </p>
+              </div>
+              <div class="item">
+                <div class="destination">
+                  <a
+                    href="#"
+                    class="img img-2 d-flex justify-content-center align-items-center open-umkm"
+                    style="background-image: url({{ asset('frontend/images/warkop.jpg') }})"
+                    data-img="{{ asset('frontend/images/warkop.jpg') }}"
+                  >
+                    <div
+                      class="icon d-flex justify-content-center align-items-center"
+                    >
+                      <span class="icon-search2"></span>
+                    </div>
+                  </a>
+                  <div class="text p-3">
+                    <h3>Warung Kopi</h3>
+                    <p class="rate">
+                      <span style="font-size: 16px; font-weight: bold;">Oleh: Pak Budi Santoso</span>
+                    </p>
+                    <hr style="margin: 10px 0;" />
+                    <p>
+                      Tempat nongkrong favorit dengan berbagai jenis kopi specialty dan camilan ringan.
+                    </p>
+                    <hr />
+                    <p class="bottom-area d-flex">
+                      <span><i class="icon-map-o"></i> Gang 4 Blok D RT 2</span>
+                      <span class="ml-auto"><a href="https://wa.me/6285964165170"><i class="fab fa-whatsapp"></i> Kontak</a></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="destination">
+                  <a
+                    href="#"
+                    class="img img-2 d-flex justify-content-center align-items-center open-umkm"
+                    style="background-image: url({{ asset('frontend/images/warungmadura.jpg') }})"
+                    data-img="{{ asset('frontend/images/warungmadura.jpg') }}"
+                  >
+                    <div
+                      class="icon d-flex justify-content-center align-items-center"
+                    >
+                      <span class="icon-search2"></span>
+                    </div>
+                  </a>
+                  <div class="text p-3">
+                    <h3>Warung Madura</h3>
+                    <p class="rate">
+                      <span style="font-size: 16px; font-weight: bold;">Oleh: Bu Rina Kusuma</span>
+                    </p>
+                    <hr style="margin: 10px 0;" />
+                    <p>
+                      Warung makan khas Madura dengan berbagai menu, dan nasi cumi yang autentik.
+                    </p>
+                    <hr />
+                    <p class="bottom-area d-flex">
+                      <span><i class="icon-map-o"></i> Gang 5 Blok E RT 3</span>
+                      <span class="ml-auto"><a href="https://wa.me/6285964165170"><i class="fab fa-whatsapp"></i> Kontak</a></span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -489,83 +506,191 @@
         <div class="row justify-content-start mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
             <span class="subheading">Berita</span>
-            <h2><strong>Informasi</strong>  Terupdate</h2>
+            <h2><strong>Informasi</strong> Terupdate</h2>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="{{ route('blog-single') }}"
-                class="block-20"
-                style="background-image: url('{{ asset('frontend/images/blog1.jpg') }}')"
-              >
-              </a>
-              <div class="text p-4 d-block">
-                <span class="tag">KKN, SDGs</span>
-                <h3 class="heading mt-3">
-                  <a href="{{ route('blog-single') }}">Pembukaan KKN SDGs Kelompok 4</a>
-                </h3>
-                <div class="meta mb-3">
-                  <div><a href="#">20 Oktober 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
+        <div class="row">
+          <div class="col-md-12">
+            <div class="destination-slider owl-carousel ftco-animate" id="news-carousel">
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-pembukaan-kkn') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/blog1.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">KKN, SDGs</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-pembukaan-kkn') }}">Pembukaan KKN SDGs Kelompok 4</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">20 Oktober 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-posyandu') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/posyandu3.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Kesehatan</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-posyandu') }}">Kegiatan Posyandu RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-senam') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/senam2.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Kesehatan, Komunitas</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-senam') }}">Senam Bersama Warga RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-bank-sampah') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/banksampah1.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Lingkungan, Daur Ulang</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-bank-sampah') }}">Bank Sampah RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-kebun-asri') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/dharmakarya.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Lingkungan, Pertanian</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-kebun-asri') }}">Kebun Asri RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-mural') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/mural.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Seni, Lingkungan</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-mural') }}">Mural Daun Pohon RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="blog-entry align-self-stretch">
+                  <a
+                    href="{{ route('blog-ecobrick') }}"
+                    class="block-20"
+                    style="background-image: url('{{ asset('frontend/images/ecobrick.jpg') }}')"
+                  >
+                  </a>
+                  <div class="text p-4 d-block">
+                    <span class="tag">Lingkungan, Inovasi</span>
+                    <h3 class="heading mt-3">
+                      <a href="{{ route('blog-ecobrick') }}">Ecobrick RW 2</a>
+                    </h3>
+                    <div class="meta mb-3">
+                      <div><a href="#">November 2025</a></div>
+                      <div><a href="#">Admin</a></div>
+                      <div>
+                        <a href="#" class="meta-chat"
+                          ><span class="icon-chat"></span> 3</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="{{ route('blog') }}"
-                class="block-20"
-                style="background-image: url('{{ asset('frontend/images/wae-rebo-village.jpg') }}')"
-              >
-              </a>
-              <div class="text p-4 d-block">
-                <span class="tag">Tips, Travel</span>
-                <h3 class="heading mt-3">
-                  <a href="{{ route('blog') }}">The Wonderful of Waerebo Village</a>
-                </h3>
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="{{ route('blog') }}"
-                class="block-20"
-                style="background-image: url('{{ asset('frontend/images/penglipular.jpg') }}')"
-              >
-              </a>
-              <div class="text p-4 d-block">
-                <span class="tag">Culture</span>
-                <h3 class="heading mt-3">
-                  <a href="{{ route('blog') }}">Penglipuran The World's Cleanest Village</a>
-                </h3>
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-              </div>
+            <div class="text-center mt-4">
+              <a href="{{ route('blog') }}" class="btn btn-primary">Lihat Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -685,6 +810,18 @@
       modal.modal('show');
     });
 
+    // Saat gambar UMKM diklik → buka modal
+    $('.open-umkm').on('click', function (e) {
+      e.preventDefault();
+      const imgSrc = $(this).data('img');
+      modalImg.src = imgSrc;
+      scale = 1;
+      originX = 0;
+      originY = 0;
+      modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+      modal.modal('show');
+    });
+
     // Double-click untuk zoom
     modalImg.addEventListener('dblclick', function () {
       if (scale === 1) {
@@ -733,6 +870,28 @@
       originX = 0;
       originY = 0;
       modalImg.style.transform = 'translate(0px, 0px) scale(1)';
+    });
+
+    // Inisialisasi Owl Carousel untuk news
+    $('#news-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
     });
   });
 </script>
