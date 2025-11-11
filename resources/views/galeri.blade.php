@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Galeri - RW 2 Sidotopo')
+
 @section('content')
 <div class="hero-wrap js-fullheight" style="background-image: url('{{ asset('frontend/images/galeri.jpg') }}')">
   <div class="overlay"></div>
@@ -7,7 +9,7 @@
     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
       <div class="col-md-9 ftco-animate text-center">
         <p class="breadcrumbs">
-          <span class="mr-2"><a href="{{ route('home') }}">Home</a></span>
+          <span class="mr-2"><a href="{{ route('home') }}">Beranda</a></span>
           <span>Galeri</span>
         </p>
         <h1 class="mb-3 bread">Galeri RW 2 Sidotopo</h1>
