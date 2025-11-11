@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Pengurus RT - RW 2 Sidotopo')
+
 @section('content')
 <section class="ftco-section">
   <div class="container">
@@ -31,6 +33,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Ketua RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Ketua RT 1</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -48,6 +53,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Sekretaris RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Sekretaris RT 1</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -65,6 +73,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Bendahara RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Bendahara RT 1</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -97,6 +108,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Ketua RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Ketua RT 2</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -114,6 +128,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Sekretaris RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Sekretaris RT 2</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -131,6 +148,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Bendahara RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Bendahara RT 2</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -163,6 +183,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Ketua RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Ketua RT 3</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -180,6 +203,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Sekretaris RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Sekretaris RT 3</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -197,6 +223,9 @@
                       <div class="brxe-div">
                         <p class="brxe-text-basic card-employee__position">Bendahara RT</p>
                         <div class="brxe-text-basic card-employee__name">Nama Bendahara RT 3</div>
+                        <a href="https://wa.me/6285964165170" class="whatsapp-link" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -253,6 +282,23 @@
   font-size: 16px;
   font-weight: bold;
   color: #333;
+}
+
+.whatsapp-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #25d366;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  color: #128c7e;
+}
+
+.card-employee__wrapper {
+  position: relative;
 }
 </style>
 @endsection
